@@ -1,0 +1,28 @@
+.contact-us
+{
+    background-color:aliceblue;
+    padding: 1%;
+    width:100%
+}
+.login
+{
+
+    background-color: white;
+    padding: 0% 2% 1% 2%;
+    margin: 1% 30% 5% 30%;
+}
+span
+{
+    color: red;
+}
+
+
+@media screen and (max-width:600px) {
+    .contact-us
+{
+    background-color:aliceblue;
+    padding: 3% 4% 3% 4%;
+    
+}
+
+}

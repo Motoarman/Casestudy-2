@@ -1,0 +1,28 @@
+.emergency-casualty-description{
+  display: inline-block;
+}
+
+.emergency-casualty-description p{
+  display: inline-block;
+  text-justify: auto;
+  margin-left: 3vw;
+  text-align: justify;
+}
+
+.emergency-casualty-description h1{
+  font-size: 1.6rem;
+  margin-left: 5%;
+  margin-top: 5%;
+}
+
+.table-div{
+  display: inline-block;
+}
+.table-div table{
+  display: inline-block;
+  margin-bottom: 40%;
+}
+/* 
+.table-div *{
+  display: inline-block;
+} */

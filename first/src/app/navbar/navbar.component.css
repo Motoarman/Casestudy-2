@@ -1,0 +1,42 @@
+
+  .dropdown-menu li:hover> .dropdown-submenu {
+    display: block;
+ }
+  
+ 
+  
+.dropdown-menu .dropdown-submenu {
+    left: 100%;
+    top: 5px;
+    background-color: #005c90;
+  }
+ 
+.arrow {
+    margin-left: 2em;
+    position: relative;
+    top: 5px;
+    font-size: 2em;
+    line-height: 0;
+}
+  
+
+.navbar ul li a {
+    color:#fff;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 12pt;
+    margin-right: 2em;
+}
+
+ .navbar ul li a:hover{
+    color:darkgoldenrod;
+}
+
+.nav-item{
+    margin-right: 3em;
+}
+
+.navbar{
+  position: relative;
+}
+

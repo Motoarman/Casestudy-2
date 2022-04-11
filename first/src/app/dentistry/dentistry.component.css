@@ -1,0 +1,14 @@
+.Dentistry{
+    background-color:aliceblue;
+    width: 100%;
+}
+.appointment-link{
+    text-align: center;
+ }
+ button{
+    background-color: rgb(19, 122, 187);
+    color: white;
+ }
+ .main{
+    height: 100vh;
+ }
