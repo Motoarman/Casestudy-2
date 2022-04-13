@@ -3,7 +3,7 @@
     <table class="table">
         <thead>
             <tr>
-                <th scope="col">Patient id</th>
+                
                 <th scope="col">First name</th>
                 <th scope="col">Last name</th>
                 <th scope="col">phone no</th>
@@ -17,16 +17,16 @@
         </thead>
         <tbody>
             <tr *ngFor= "let Patient of appointment">
-                <td>{{Patient.id}}</td>
-                <td>{{Patient.first_name}}</td>
-                <td>{{Patient.last_name}}</td>
-                <td>{{Patient.phone_no}}</td>
-                <td>{{Patient.email_id}}</td>
+               
+                <td>{{Patient.firstName}}</td>
+                <td>{{Patient.lastName}}</td>
+                <td>{{Patient.phoneNo}}</td>
+                <td>{{Patient.emailId}}</td>
                 <td>{{Patient.age}}</td>
-                <td>{{Patient.medical_complaint}}</td>
-                <td>{{Patient.selected_date}}</td>
-                <td>{{Patient.selected_slot}}</td>
-                <td>{{Patient.visiting_status}}</td>
+                <td>{{Patient.medicalComplaint}}</td>
+                <td>{{Patient.selectedDate | date:'yyyy-mm-dd'}}</td>
+                <td>{{Patient.selectedDate | date:'hh:mm'}}</td>
+                <td>{{Patient.visitingStatus}}</td>
                 
             </tr>
         </tbody>

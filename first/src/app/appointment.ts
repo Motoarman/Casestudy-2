@@ -4,18 +4,19 @@ import { Timestamp } from "rxjs";
 
 export interface Appointment{
     id:number;
-    first_name:string;
-    last_name:string;
-    phone_no:number;
-    email_id:string;
+    firstName:string;
+    lastName:string;
+    phoneNo:number;
+    emailId:string;
     age:number;
     gender:string;
-    medical_complaint:string;
-    selected_date:Date;
-    selected_slot:Time;
-    visiting_status:string;
-    doctor_id:number;
-    patient_id:number;
+    medicalComplaint:string;
+    selectedDate:Date;
+    selectedSlot:Time;
+    visitingStatus:string;
+    doctorId:number;
+    patientId:number;
+    
 
 
 }

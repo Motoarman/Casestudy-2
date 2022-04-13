@@ -18,7 +18,7 @@ export class DoctorServiceService {
   
  
   addEnquiry(hero:any) {
-    return this.httpClient.post<UserDetails[]>("http://localhost:3000/contact",hero,{
+    return this.httpClient.post<UserDetails[]>("https://localhost:44395/api/ContactUs",hero,{
       headers:{
         "Access-Control-Allow-Origin":"*"
       }
@@ -28,11 +28,10 @@ export class DoctorServiceService {
 
 
 appointments():Observable<Appointment[]>{
-  return this.httpClient.get<Appointment[]>("http://localhost:3000/appointments",
-  {
-
+  return this.httpClient.get<Appointment[]>("https://localhost:44395/api/Appointments/4",{
    headers:{
      "Access-Control-Allow-Origin":"*"
+     
    }
 
   });

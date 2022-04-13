@@ -31,6 +31,7 @@ import { DoctorShramaComponent } from './Doctors/doctor-shrama/doctor-shrama.com
 import { DoctorDhawanComponent } from './Doctors/doctor-dhawan/doctor-dhawan.component';
 import { DoctorPatilComponent } from './Doctors/doctor-patil/doctor-patil.component';
 import { ShowAppForPrajapatiComponent } from './Doctors/doctor-prajapati/show-app-for-prajapati/show-app-for-prajapati.component';
+import { AdminComponent } from './admin/admin.component';
 
 
 
@@ -68,7 +69,6 @@ var routelist: Routes = [
   declarations: [
     AppComponent,
     AboutUsComponent,
-    ContactUsComponent,
     DentistryComponent,
     OrthopaedicsComponent,
     NeurologyComponent,
@@ -88,11 +88,10 @@ var routelist: Routes = [
     DoctorShramaComponent,
     DoctorDhawanComponent,
     DoctorPatilComponent,
-    ShowAppForPrajapatiComponent
-
-
-
-
+    ShowAppForPrajapatiComponent,
+    ContactUsComponent,
+    AdminComponent
+    
   ],
   imports: [BrowserModule, RouterModule.forRoot(routelist),FormsModule,ReactiveFormsModule,HttpClientModule],
   providers: [],
