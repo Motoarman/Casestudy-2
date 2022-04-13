@@ -10,7 +10,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
-
 import { DentistryComponent } from './treatments/dentistry/dentistry.component';
 import { CardiologyComponent } from './treatments/cardiology/cardiology.component';
 import { OrthopaedicsComponent } from './treatments/orthopaedics/orthopaedics.component';
@@ -27,7 +26,12 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { BookAppointmentComponent } from './navbarComponents/book-appointment/book-appointment.component';
 import { AdminComponent } from './navbarComponents/admin/admin.component';
 import { DoctorsSectionComponent } from './navbarComponents/doctors-section/doctors-section.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AdminMainComponent } from './admin-main/admin-main.component';
 
+
+import {MatTableModule} from '@angular/material/table';
+import {MatButtonModule} from '@angular/material/button';
 
 var routelist: Routes = [
 
@@ -46,13 +50,7 @@ var routelist: Routes = [
   {path:'doctors', component:DoctorsSectionComponent},
   {path:'bookAppoitnment',component:BookAppointmentComponent},
   {path:'admin',component:AdminComponent},
-  
-
-
-
-
-
-
+  {path:'admin-main',component:AdminMainComponent}
 
 ];
 
@@ -76,10 +74,11 @@ var routelist: Routes = [
     BookAppointmentComponent,
     ContactUsComponent,
     AdminComponent,
-    DoctorsSectionComponent
+    DoctorsSectionComponent,
+    AdminMainComponent
     
   ],
-  imports: [BrowserModule, RouterModule.forRoot(routelist),FormsModule,ReactiveFormsModule,HttpClientModule],
+  imports: [BrowserModule, RouterModule.forRoot(routelist),FormsModule,ReactiveFormsModule,HttpClientModule, BrowserAnimationsModule,MatTableModule,MatButtonModule],
   providers: [],
   bootstrap: [AppComponent],
 })

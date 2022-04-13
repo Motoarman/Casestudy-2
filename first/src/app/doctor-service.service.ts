@@ -25,8 +25,16 @@ export class DoctorServiceService {
     })
   }
 
+getEnquiry():Observable<UserDetails[]>{
+  return this.httpClient.get<UserDetails[]>("https://localhost:44395/api/ContactUs",{
+   headers:{
+     "Access-Control-Allow-Origin":"*"
+     
+   }
 
+  });
 
+}
 appointments():Observable<Appointment[]>{
   return this.httpClient.get<Appointment[]>("https://localhost:44395/api/Appointments/4",{
    headers:{
