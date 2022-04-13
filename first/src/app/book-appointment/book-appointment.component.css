@@ -11,11 +11,6 @@
     padding: 0% 2% 1% 2%;
     margin: 1% 30% 5% 30%;
 }
-.error-msg
-{
-    color: red;
-}
-
 
 @media screen and (max-width:600px) {
     .book-appointment
@@ -24,5 +19,4 @@
     padding: 3% 4% 3% 4%;
     
 }
-
 }

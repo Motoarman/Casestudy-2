@@ -28,7 +28,7 @@ export class DoctorServiceService {
 
 
 appointments():Observable<Appointment[]>{
-  return this.httpClient.get<Appointment[]>("https://localhost:44395/api/Appointments/4",{
+  return this.httpClient.get<Appointment[]>("https://localhost:44395/api/Appointments/2",{
    headers:{
      "Access-Control-Allow-Origin":"*"
      
