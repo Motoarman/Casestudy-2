@@ -11,9 +11,15 @@
     background-color: #005c90;
   }
  
+  .dropdown-menu{
+    background-color: #005c90;
+    text-align: center;
+  }
+
+  
+  
 .arrow {
-    margin-left: 2em;
-    position: relative;
+    margin-left :2em ;
     top: 5px;
     font-size: 2em;
     line-height: 0;
@@ -40,3 +46,6 @@
   position: relative;
 }
 
+#avail{
+  margin-left:3em;
+}

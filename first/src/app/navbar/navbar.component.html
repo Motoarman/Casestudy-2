@@ -38,8 +38,8 @@
             aria-labelledby="navbarDropdown"
           >
             <li>
-              <a class="dropdown-item"
-                >Available Treatments<Span class="arrow">&raquo;</Span></a
+              <a class="dropdown-item " id="avail"
+                >Available Treatments<Span class="arrow"> &raquo;</Span></a
               >
               <ul class="dropdown-menu dropdown-submenu">
 
@@ -97,38 +97,19 @@
           >
             Hospital Section
           </a>
-          <div style="background-color: #005c90" class="dropdown-menu">
+          <div class="dropdown-menu">
             <li>
-              <a class="dropdown-item"
-                >Doctors<Span class="arrow">&raquo;</Span></a
-              >
-              <ul class="dropdown-menu dropdown-submenu">
-
-                <li>
-                  <a class="dropdown-item" routerLink="/drPrajapati"
-                  >Dr M. Prajapati
-                </a>
-              </li>
-              <li>
-                <hr class="dropdown-divider" />
-                <a class="dropdown-item" routerLink="/drJadhav">Dr R. Jadhav</a>
-              </li>
-              <li>
-                <hr class="dropdown-divider" />
-                <a class="dropdown-item" routerLink="/drSharma">Dr S. Sharma </a>
-              </li>
-                <li>
-                  <hr class="dropdown-divider" />
-                  <a class="dropdown-item" routerLink="/drPatil"
-                    >Dr V. Patil
-                  </a>
-                </li>
-                <li>
-                  <hr class="dropdown-divider" />
-                  <a class="dropdown-item" routerLink="/drDhawan">Dr N. Dhawan</a>
-                </li>
-              </ul>
+              <a class="dropdown-item" routerLink="/doctors"
+              >Doctors
+            </a>
             </li>
+            <hr class="dropdown-divider" />
+            <li>
+              <a class="dropdown-item" routerLink="/admin"
+              >Admin
+            </a>
+            </li>
+            
           </div>
         </li>
         <!-- <li></li> -->
