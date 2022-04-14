@@ -1,6 +1,7 @@
 import { Component,Inject ,OnInit } from '@angular/core';
 import { FormControl, FormGroup, NgForm, Validators} from '@angular/forms';
 import { DoctorServiceService } from 'src/app/doctor-service.service';
+import { PatientDetails } from 'src/app/patient-details';
 
 @Inject(DoctorServiceService)
 @Component({
@@ -9,8 +10,10 @@ import { DoctorServiceService } from 'src/app/doctor-service.service';
   styleUrls: ['./book-appointment.component.css']
 })
 export class BookAppointmentComponent implements OnInit {
+  PatientDetails! :PatientDetails[];
 
   constructor(private DoctorServiceService: DoctorServiceService) { }
+  
 
   ngOnInit(): void {
   }
@@ -27,12 +30,16 @@ export class BookAppointmentComponent implements OnInit {
     MedicalComplaint: new FormControl('',[Validators.required]),
     VisitingStatus: new FormControl('',[Validators.required])
 })
+
+
 onSubmit()
   {
+    this.PatientDetails=this.book_appointment.value;
+    
     this.DoctorServiceService.addAppointments(this.book_appointment.value).subscribe(data=>{
 
     }) 
-      console.log(this.book_appointment.value),
+      console.log(this.PatientDetails),
       alert("Your appointment is booked")
       ;
   }

@@ -4,6 +4,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Appointment } from './appointment';
 import { Observable } from 'rxjs';
 import { UserDetails } from './user-details';
+import { PatientDetails } from './patient-details';
 
 
 @Injectable({
@@ -12,14 +13,15 @@ import { UserDetails } from './user-details';
 export class DoctorServiceService {
   appointment! :Appointment[];
   userDetails!: UserDetails[];
+  PatientDetails!:PatientDetails[];
   
   constructor(private httpClient: HttpClient) { }
 
   
  
-  addAppointments(patient:any) {
+addAppointments(patient:any) {
     console.log(patient)
-    return this.httpClient.post<UserDetails[]>("https://localhost:44395/api/PatientDetails",patient,{
+    return this.httpClient.post("https://localhost:44303/api/PatientDetails",patient,{
       headers:{
         "Access-Control-Allow-Origin":"*"
       }
@@ -29,7 +31,7 @@ export class DoctorServiceService {
 
 
 appointments():Observable<Appointment[]>{
-  return this.httpClient.get<Appointment[]>("https://localhost:44395/api/Appointments/4",
+  return this.httpClient.get<Appointment[]>("https://localhost:44303/api/Appointments/4",
   {
 
    headers:{
@@ -41,7 +43,7 @@ appointments():Observable<Appointment[]>{
 
 addEnquiry(hero:any) {
   console.log(hero)
-  return this.httpClient.post<UserDetails[]>("https://localhost:44395/api/contactUs",hero,{
+  return this.httpClient.post("https://localhost:44303/api/contactUs",hero,{
     headers:{
       "Access-Control-Allow-Origin":"*"
     }
@@ -49,7 +51,7 @@ addEnquiry(hero:any) {
 }
 
 getEnquiry():Observable<UserDetails[]>{
-  return this.httpClient.get<UserDetails[]>("https://localhost:44395/api/contactUs",
+  return this.httpClient.get<UserDetails[]>("https://localhost:44303/api/ContactUs",
   {
 
    headers:{
