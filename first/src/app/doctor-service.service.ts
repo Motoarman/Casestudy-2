@@ -37,4 +37,15 @@ appointments():Observable<Appointment[]>{
 
   });
 }
+
+getEnquiry():Observable<UserDetails[]>{
+  return this.httpClient.get<UserDetails[]>("https://localhost:44395/api/contactUs",
+  {
+
+   headers:{
+     "Access-Control-Allow-Origin":"*"
+   }
+
+  });
+}
 }

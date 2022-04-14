@@ -17,13 +17,18 @@ export class AdminComponent implements OnInit {
   constructor(private DoctorServiceService :DoctorServiceService) { }
   
   ngOnInit(): void {
-    //this.DoctorServiceService.getEnquiry().subscribe(data=>{
-    //  this.userdetails = data;
-   // })
+    this.DoctorServiceService.getEnquiry().subscribe(data=>{
+    this.userdetails = data;
+   })
     
   }
   displayedColumns: string[] = [  'Firstname', 'Lastname', 'EmailId', 'PComment'];
    
+  showDiv = {
+    enquiry: false,
+    current : false,
+    next : false
+  }
   
 
 

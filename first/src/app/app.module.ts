@@ -27,11 +27,11 @@ import { BookAppointmentComponent } from './navbarComponents/book-appointment/bo
 import { AdminComponent } from './navbarComponents/admin/admin.component';
 import { DoctorsSectionComponent } from './navbarComponents/doctors-section/doctors-section.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { AdminMainComponent } from './admin-main/admin-main.component';
 
 
 import {MatTableModule} from '@angular/material/table';
 import {MatButtonModule} from '@angular/material/button';
+import {MatIconModule} from '@angular/material/icon';
 
 var routelist: Routes = [
 
@@ -50,7 +50,6 @@ var routelist: Routes = [
   {path:'doctors', component:DoctorsSectionComponent},
   {path:'bookAppoitnment',component:BookAppointmentComponent},
   {path:'admin',component:AdminComponent},
-  {path:'admin-main',component:AdminMainComponent}
 
 ];
 
@@ -75,10 +74,9 @@ var routelist: Routes = [
     ContactUsComponent,
     AdminComponent,
     DoctorsSectionComponent,
-    AdminMainComponent
     
   ],
-  imports: [BrowserModule, RouterModule.forRoot(routelist),FormsModule,ReactiveFormsModule,HttpClientModule, BrowserAnimationsModule,MatTableModule,MatButtonModule],
+  imports: [BrowserModule, RouterModule.forRoot(routelist),FormsModule,ReactiveFormsModule,HttpClientModule, BrowserAnimationsModule,MatTableModule,MatButtonModule,MatIconModule],
   providers: [],
   bootstrap: [AppComponent],
 })

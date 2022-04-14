@@ -1,5 +1,27 @@
-<div class="table-responsive-sm" >
-
+<div id="main-div">
+  <div>
+   <mat-icon>admin_panel_settings</mat-icon>
+   <h2> Welcome Admin</h2>
+ 
+</div>
+<div class="container">
+  <div class="row">
+      <div class="col-md-4">
+          <div class="btn-group">
+              <div class="btn btn-dark"
+                  (click)="showDiv.enquiry = !showDiv.enquiry;showDiv.current = false;showDiv.next = false">
+                  Enquiries
+              </div>
+              <div class="btn btn-secondary"
+                  (click)= " showDiv.current = !showDiv.current;showDiv.enquiry = false;showDiv.next = false ">
+                  doctors
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="row">
+      <div *ngIf="showDiv.enquiry">
+        <div class="table-responsive-sm" >
 <table  mat-table [dataSource]="userdetails" class="mat-elevation-z8">
 
     <!--- Note that these columns can be defined in any order.
@@ -34,3 +56,11 @@
   </table>
   
 </div>
+      </div>
+  </div>
+</div>
+
+</div>
+
+
+
