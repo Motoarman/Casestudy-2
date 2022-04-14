@@ -19,14 +19,12 @@
           </div>
       </div>
   </div>
-  <div class="row">
-      <div *ngIf="showDiv.enquiry">
-        <div class="table-responsive-sm" >
-<table  mat-table [dataSource]="userdetails" class="mat-elevation-z8">
 
-    <!--- Note that these columns can be defined in any order.
-          The actual rendered columns are set as a property on the row definition" -->
-  
+
+  <div  class="row">
+      <div class="table-responsive-sm" *ngIf="showDiv.enquiry">
+        <div  >
+<table mat-table [dataSource]="userdetails" class="mat-elevation-z8">
     <!-- Position Column -->
     <ng-container  matColumnDef="Firstname">
       <th class="res" mat-header-cell *matHeaderCellDef>Firstname  </th>

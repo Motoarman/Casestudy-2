@@ -10,7 +10,7 @@
             <div class="row">
                 <div class="col mb-2">
                     <label for="firstname" class="form-label">First Name</label>
-                    <input type="text" class="form-control" placeholder="Name" formControlName="firstname" />
+                    <input type="text" class="form-control" placeholder="Name" formControlName="FirstName" />
                     <div class="form-text text-danger" *ngIf="
                     FirstName.errors?.['required'] &&
                     (FirstName.touched || FirstName.dirty)">
@@ -27,7 +27,7 @@
                 </div>
                 <div class="col mb-2">
                     <label for="lastname" class="form-label">Last Name</label>
-                    <input type="text" class="form-control" placeholder="Surname" formControlName="lastname" />
+                    <input type="text" class="form-control" placeholder="Surname" formControlName="LastName" />
                     <div class="form-text text-danger" *ngIf="
                     LastName.errors?.['required'] &&
                     (LastName.touched || LastName.dirty)">
@@ -46,7 +46,7 @@
             <div class="row">
                 <div class="col mb-2">
                     <label for="phone_no">Phone no</label><br />
-                    <input type="tel" class="form-control" formControlName="phone_no" placeholder="enter contact number" />
+                    <input type="tel" class="form-control" formControlName="PhoneNo" placeholder="enter contact number" />
                     <div class="form-text text-danger" *ngIf="PhoneNo.errors?.['required'] &&
                     (PhoneNo.touched || PhoneNo.dirty)
                         ">
@@ -69,14 +69,14 @@
             <div class="row">
                 <div class="col mb-2">
                     <label for="email" class="form-label">Email address </label>
-                    <input type="email" class="form-control" placeholder="eg. abc@gmail.com" formControlName="email" />
-                    <div class="form-text text-danger" *ngIf="Email.errors?.['required'] &&
-                    (Email.touched || Email.dirty)
+                    <input type="email" class="form-control" placeholder="eg. abc@gmail.com" formControlName="EmailId" />
+                    <div class="form-text text-danger" *ngIf="EmailId.errors?.['required'] &&
+                    (EmailId.touched || EmailId.dirty)
                         ">
                         Email is required.
                     </div>
-                    <div class="form-text text-danger" *ngIf="Email.errors?.['email'] &&
-                    (Email.touched || Email.dirty)
+                    <div class="form-text text-danger" *ngIf="EmailId.errors?.['email'] &&
+                    (EmailId.touched || EmailId.dirty)
                         ">
                         Email is invalid.
                     </div>
@@ -86,7 +86,7 @@
             <div class="row">
                 <div class="col mb-2">
                     <label for="age" class="form-label">Age</label>
-                    <input type="text" class="form-control" formControlName="age" placeholder="enter your age" />
+                    <input type="text" class="form-control" formControlName="Age" placeholder="enter your age" />
                         <div class="form-text text-danger" *ngIf="Age.errors?.['required'] &&
                         (Age.touched || Age.dirty)
                             ">
@@ -107,11 +107,11 @@
             <div class="col ps-2 mb-2">
                 <div class="m-1">Gender</div>
                 <div class="form-check form-check-inline">
-                    <input type="radio" class="form-check-input" value="m" formControlName="gender">
+                    <input type="radio" class="form-check-input" value="m" formControlName="Gender">
                     <label class="form-check-label" for="male">Male</label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input type="radio" class="form-check-input" value="f" formControlName="gender">
+                    <input type="radio" class="form-check-input" value="f" formControlName="Gender">
                     <label class="form-check-label" for="female">Female</label>
                 </div>
                 <div class="form-text text-danger" *ngIf="Gender.errors?.['required']">
@@ -122,17 +122,17 @@
     <div class="row">
         <div class="col mb-2">
             <label for="selected_date" class="form-label">Selected date: </label>
-            <input type="date" formControlName="selected_date">
+            <input type="date" formControlName="SelectedDate">
             <div class="form-text text-danger" *ngIf="SelectedDate.errors?.['required'] &&
                     (SelectedDate.touched || SelectedDate.dirty)
                         ">
                 Date is required.</div>
         </div>
         <div class="col mb-2">
-            <label for="selected_slot" class="form-label">Selected slot: </label>
+            <label for="SelectedSlot" class="form-label">Selected Slot: </label>
             <div>
                 <select onfocus='this.size=5;' onblur='this.size=1;' onchange='this.size=1; this.blur();'
-                    formControlName="selected_slot">
+                    formControlName="SelectedSlot">
                     <option value="10:00 AM">10:00 AM</option>
                     <option value="10:20 AM">10:20 AM</option>
                     <option value="10:40 AM">10:40 AM</option>
@@ -167,7 +167,7 @@
     <div class="row">
         <div class="col mb-2">
             <label for="medical_complaint" class="form-label">Medical complaint:</label>
-            <textarea class="form-control" rows="2" formControlName="medical_complaint">
+            <textarea class="form-control" rows="2" formControlName="MedicalComplaint">
                 </textarea>
                 <div class="form-text text-danger" *ngIf="MedicalComplaint.errors?.['required'] &&
                 (MedicalComplaint.touched || MedicalComplaint.dirty)
@@ -179,7 +179,7 @@
         <div class="col mb-2">
             <label for="visiting_status" class="form-label">Visiting status</label>
             <div>
-                <select formControlName="visiting_status">
+                <select formControlName="VisitingStatus">
                     <option value="visited before">Visited before</option>
                     <option value="visiting for the first time">Visiting for the first time</option>
                 </select>

@@ -157,4 +157,3 @@ C:\Users\Arman15411\Desktop\Casestudy2\server\server\obj\Debug\netcoreapp3.1\ser
 C:\Users\Arman15411\Desktop\Casestudy2\server\server\obj\Debug\netcoreapp3.1\server.dll
 C:\Users\Arman15411\Desktop\Casestudy2\server\server\obj\Debug\netcoreapp3.1\server.pdb
 C:\Users\Arman15411\Desktop\Casestudy2\server\server\obj\Debug\netcoreapp3.1\server.genruntimeconfig.cache
-C:\Users\Arman15411\Desktop\Casestudy2\server\server\obj\Debug\netcoreapp3.1\server.csproj.AssemblyReference.cache

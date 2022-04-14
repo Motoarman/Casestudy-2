@@ -17,8 +17,9 @@ export class DoctorServiceService {
 
   
  
-  addEnquiry(hero:any) {
-    return this.httpClient.post<UserDetails[]>("https://localhost:44395/api/contactUs",hero,{
+  addAppointments(patient:any) {
+    console.log(patient)
+    return this.httpClient.post<UserDetails[]>("https://localhost:44395/api/PatientDetails",patient,{
       headers:{
         "Access-Control-Allow-Origin":"*"
       }
@@ -36,6 +37,15 @@ appointments():Observable<Appointment[]>{
    }
 
   });
+}
+
+addEnquiry(hero:any) {
+  console.log(hero)
+  return this.httpClient.post<UserDetails[]>("https://localhost:44395/api/contactUs",hero,{
+    headers:{
+      "Access-Control-Allow-Origin":"*"
+    }
+  })
 }
 
 getEnquiry():Observable<UserDetails[]>{
