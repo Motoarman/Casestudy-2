@@ -15,13 +15,11 @@ export class ContactUsComponent{
 
   }
    
-    contact = new FormGroup({
+  contact = new FormGroup({
     firstname:new FormControl('',[Validators.required,Validators.pattern('[a-zA-Z]*')]),
     lastname:new FormControl('',[Validators.required]),
     email:new FormControl('',[Validators.required]),
     comment:new FormControl('',[Validators.required])
-
-    
   })
  
   onSubmit(data:any)
