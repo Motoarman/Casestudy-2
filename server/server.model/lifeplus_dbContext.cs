@@ -29,7 +29,7 @@ namespace server.model
         {
             if (!optionsBuilder.IsConfigured)
             {
-
+#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
                 optionsBuilder.UseNpgsql("host=localhost;database=lifeplus_db;user id=postgres;password=root;");
             }
         }
@@ -219,7 +219,11 @@ namespace server.model
                     .HasColumnName("id")
                     .UseIdentityAlwaysColumn();
 
-                entity.Property(e => e.Age).HasColumnName("age");
+                entity.Property(e => e.Age)
+                    .HasColumnType("character varying")
+                    .HasColumnName("age");
+
+                entity.Property(e => e.DoctorId).HasColumnName("doctor_id");
 
                 entity.Property(e => e.EmailId)
                     .HasMaxLength(30)

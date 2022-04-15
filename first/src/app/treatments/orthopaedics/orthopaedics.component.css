@@ -1,16 +1,53 @@
-.Orthopaedics{
-    background-color:aliceblue;
-    width: 100%;
- }
- .appointment-link{
-    text-align: center;
- }
- button{
+.main{
+   min-height:60vh;
+   background-color: white;
+   
+
+  
+}
+.appointment-link{
+   text-align: center;
+}
+button{
    background-color: rgb(19, 122, 187);
    color: white;
 }
- .main{
-    height: 100vh;
- }
 
+.doctors{
+  display: inline-block;
+   background-color: white;
+   margin-bottom:1em;
+   border-style: solid; min-height: 57vh ; margin-left: 2em;
+}
+
+.cardiology_page{
+   display: inline-block;
+
+}
+
+.product_image{
+   text-align: center;
+}
+
+h1{
+
+ font-weight: lighter;
+ margin-top: 0.5em;
  
+ 
+}
+b{
+   font-family:monospace;
+   font-weight:bolder;
+   color:#003257;
+}
+
+
+.btn{
+   margin: 0px 2em 1em 2em ;
+}
+
+h1,h2,h3 {
+   color:#003257;
+   font-family: fantasy;
+}

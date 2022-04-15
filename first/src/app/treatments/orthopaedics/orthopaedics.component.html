@@ -1,9 +1,10 @@
-<section class="Orthopaedics">
-  <div class="col-md-8 col-lg-8 col-sm-8 orthopaedics_page">
-    <h1 class="text-center">
-      <b>Orthopaedics</b>
-    </h1>
-    <div class="main">
+
+<div class="col-md-8 col-lg-8 col-sm-8 cardiology_page">
+   
+  <div class ="main">
+      <h1>
+        Orthopaedics
+      </h1>
       <p>
         Our team provides personalized, comprehensive care for a wide range of
         orthopedic conditions in multiple subspecialties including spine, foot,
@@ -12,21 +13,46 @@
         patients with unparalleled expertise in both surgical and non-operative
         spinal injuries, joint replacement, and orthopedic surgery.
       </p>
-
-      <h2><b>services provided : </b></h2>
-      <p>
-        <b>TRAUMA AND FRACTURE :</b>
+     
+          <h2>services provided :</h2>
+          <p>
+              <b>HEART ATTACK :</b>
+              <b>TRAUMA AND FRACTURE :</b>
         Broken bones, regardless of their complexity, require specialised care which is offered by our experts
-      </p>
-      <p>
-        <b>HAND AND ARM :</b>
-        A completely therapeutic approach to eliminate pain and to maximise movement
-      </p>
-      <div class="appointment-link">
-        <a routerLink="/bookAppoitnment"
-          ><button><b>Book Appointment</b></button></a
-        >
-      </div>
-    </div>
+          </p>
+          <p>
+            <b>HAND AND ARM :</b>
+            A completely therapeutic approach to eliminate pain and to maximise movement
+          </p>
+
+</div>
+</div>
+
+<div class="doctors">
+  <div style="text-align: center; ">
+    <h3>Cardiologist</h3>
+    <h4>Dr.S.Jadhav(M.S)</h4>
+    <hr>
   </div>
-</section>
+  <div class="container text-center">
+    <div class="row">
+      <div class="col-md-3" >
+        <div class="box">
+          <div class="product_image">
+            <img style="margin-left: 1em;" src="../assets/admin.png" height="170vh" width="200vh" alt="p_01">
+         </div>  
+         <br>
+         <div class="btn btn-primary"
+            (click)="showDiv.enquiry = !showDiv.enquiry;">
+            Book Appointment
+        </div>            
+    </div>              
+  </div>            
+</div>
+</div>
+</div>
+
+
+<div style="display: block;" *ngIf="showDiv.enquiry">
+  <app-book-appointment></app-book-appointment>
+</div>  

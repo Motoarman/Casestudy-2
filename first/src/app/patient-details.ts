@@ -3,11 +3,12 @@ export interface PatientDetails {
     LastName:string;
     PhoneNo:string;
     EmailId: string;
-    Age:number;
+    Age:string;
     Gender:string;
     MedicalComplaint:string;
     SelectedDate:Date;
     SelectedSlot:string;
     VisitingStatus:string;
+    doctorId:number;
 
 }

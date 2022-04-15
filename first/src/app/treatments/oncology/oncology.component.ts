@@ -11,5 +11,9 @@ export class OncologyComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  showDiv = {
+    enquiry: false,
+    current : false,
+    next : false
+  }
 }

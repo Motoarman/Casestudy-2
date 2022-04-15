@@ -12,4 +12,7 @@ export class OrthopaedicsComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  showDiv = {
+    enquiry: false,
+  }
 }

@@ -7,11 +7,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./cardiology.component.css']
 })
 export class CardiologyComponent  {
-
+  CardiologistId =1;
   constructor() { }
+
+  
 
   onBook(){
 
+  }
+
+  showDiv = {
+    enquiry: false,
   }
 
 }

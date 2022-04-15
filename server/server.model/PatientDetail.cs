@@ -18,5 +18,6 @@ namespace server.model
         public DateTime? SelectedDate { get; set; }
         public string SelectedSlot { get; set; }
         public string VisitingStatus { get; set; }
+        public int? DoctorId { get; set; }
     }
 }
