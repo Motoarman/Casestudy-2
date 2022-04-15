@@ -10,20 +10,3 @@ C:\Users\Arman15411\Desktop\Casestudy2\server\server.model\obj\Debug\netcoreapp3
 C:\Users\Arman15411\Desktop\Casestudy2\server\server.model\obj\Debug\netcoreapp3.1\server.model.dll
 C:\Users\Arman15411\Desktop\Casestudy2\server\server.model\obj\Debug\netcoreapp3.1\server.model.pdb
 C:\Users\Arman15411\Desktop\Casestudy2\server\server.model\obj\Debug\netcoreapp3.1\server.model.genruntimeconfig.cache
-<<<<<<< HEAD
-D:\Casestudy-2\server\server.model\bin\Debug\netcoreapp3.1\server.model.deps.json
-D:\Casestudy-2\server\server.model\bin\Debug\netcoreapp3.1\server.model.runtimeconfig.json
-D:\Casestudy-2\server\server.model\bin\Debug\netcoreapp3.1\server.model.runtimeconfig.dev.json
-D:\Casestudy-2\server\server.model\bin\Debug\netcoreapp3.1\server.model.dll
-D:\Casestudy-2\server\server.model\bin\Debug\netcoreapp3.1\server.model.pdb
-D:\Casestudy-2\server\server.model\obj\Debug\netcoreapp3.1\server.model.csproj.AssemblyReference.cache
-D:\Casestudy-2\server\server.model\obj\Debug\netcoreapp3.1\server.model.GeneratedMSBuildEditorConfig.editorconfig
-D:\Casestudy-2\server\server.model\obj\Debug\netcoreapp3.1\server.model.AssemblyInfoInputs.cache
-D:\Casestudy-2\server\server.model\obj\Debug\netcoreapp3.1\server.model.AssemblyInfo.cs
-D:\Casestudy-2\server\server.model\obj\Debug\netcoreapp3.1\server.model.csproj.CoreCompileInputs.cache
-D:\Casestudy-2\server\server.model\obj\Debug\netcoreapp3.1\server.model.dll
-D:\Casestudy-2\server\server.model\obj\Debug\netcoreapp3.1\server.model.pdb
-D:\Casestudy-2\server\server.model\obj\Debug\netcoreapp3.1\server.model.genruntimeconfig.cache
-=======
-C:\Users\Arman15411\Desktop\Casestudy2\server\server.model\obj\Debug\netcoreapp3.1\server.model.csproj.AssemblyReference.cache
->>>>>>> 7a160ca2be6fac3fd9ecef88e9aaaa899c2d30be
