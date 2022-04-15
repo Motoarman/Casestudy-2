@@ -1,33 +1,60 @@
-<section class="Oncology">
-  <div class="col-md-8 col-lg-8 col-sm-8 oncology_page">
-      <h1 class="text-center">
-      <b>oncology</b>
-    </h1>
-    <div class="main">
+
+<div class="col-md-8 col-lg-8 col-sm-8 cardiology_page">
+   
+  <div class ="main">
+      <h1>
+        Oncology
+      </h1>
       <p>
         We offer comprehensive care in diagnosing and treating patients of all
-        ages, suffering from solid tumours and haematological malignancies. We
-        are committed at offering compassionate care along with personalized
-        treatment for patients with various cancer types through the use of
-        chemotherapy and targeted therapy
-      </p>
+      ages, suffering from solid tumours and haematological malignancies. We
+      are committed at offering compassionate care along with personalized
+      treatment for patients with various cancer types through the use of
+      chemotherapy and targeted therapy
 
-      <h2><b>services provided : </b></h2>
-      <p>
-        <b>HEAD AND NECK CANCER:</b>
-        We have extensive experience in traditional and novel approaches to head
-        and neck cancer care
       </p>
-      <p>
-        <b>LUNG CANCER :</b>
+      
+          <h2>services provided :</h2>
+          <p>
+            <b>HEAD AND NECK CANCER:</b>
+            We have extensive experience in traditional and novel approaches to head
+            and neck cancer care
+          </p>
+          <p>
+              <b>HIGH BLOOD PRESSURE :</b>
+              <b>LUNG CANCER :</b>
         At our centre, we give you access to a wide range of experts and
         treatment options for lung cancer
-      </p>
-      <div class="appointment-link">
-        <a routerLink="/bookAppoitnment"
-          ><button><b>Book Appointment</b></button></a
-        >
-      </div>
-    </div>
+          </p>
+
+</div>
+</div>
+
+<div class="doctors">
+  <div style="text-align: center; ">
+    <h3>Cardiologist</h3>
+    <h4>Dr.S.Jadhav(M.S)</h4>
+    <hr>
   </div>
-</section>
+  <div class="container text-center">
+    <div class="row">
+      <div class="col-md-3" >
+        <div class="box">
+          <div class="product_image">
+            <img style="margin-left: 1em;" src="../assets/admin.png" height="170vh" width="200vh" alt="p_01">
+         </div>  
+         <br>
+         <div class="btn btn-primary"
+            (click)="showDiv.enquiry = !showDiv.enquiry;showDiv.current = false;showDiv.next = false;">
+            Book Appointment
+        </div>            
+    </div>              
+  </div>            
+</div>
+</div>
+</div>
+
+
+<div style="display: block;" *ngIf="showDiv.enquiry">
+  <app-book-appointment></app-book-appointment>
+</div>  

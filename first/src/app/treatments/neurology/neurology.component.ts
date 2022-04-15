@@ -11,5 +11,8 @@ export class NeurologyComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  showDiv = {
+    enquiry: false,
+  }
 
 }

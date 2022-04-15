@@ -1,4 +1,4 @@
-import { Component,Inject ,OnInit } from '@angular/core';
+import { Component,Inject ,Input,OnInit } from '@angular/core';
 import { FormControl, FormGroup, NgForm, Validators} from '@angular/forms';
 import { DoctorServiceService } from 'src/app/doctor-service.service';
 import { PatientDetails } from 'src/app/patient-details';
@@ -11,8 +11,10 @@ import { PatientDetails } from 'src/app/patient-details';
 })
 export class BookAppointmentComponent implements OnInit {
   PatientDetails! :PatientDetails[];
-
+  @Input() doctorId!:number;
   constructor(private DoctorServiceService: DoctorServiceService) { }
+
+ 
   
 
   ngOnInit(): void {
@@ -34,12 +36,26 @@ export class BookAppointmentComponent implements OnInit {
 
 onSubmit()
   {
-    this.PatientDetails=this.book_appointment.value;
     
-    this.DoctorServiceService.addAppointments(this.book_appointment.value).subscribe(data=>{
+    let newP:PatientDetails= {
+      doctorId: this.doctorId,
+      FirstName: this.book_appointment.value.FirstName,
+      LastName: this.book_appointment.value.LastName,
+      PhoneNo: this.book_appointment.value.PhoneNo,
+      EmailId: this.book_appointment.value.EmailId,
+      Age: this.book_appointment.value.Age,
+      Gender: this.book_appointment.value.Gender,
+      MedicalComplaint: this.book_appointment.value.MedicalComplaint,
+      SelectedDate:this.book_appointment.value.SelectedDate ,
+      SelectedSlot: this.book_appointment.value.SelectedSlot,
+      VisitingStatus: this.book_appointment.value.VisitingStatus
+    };
+    
+    
+    this.DoctorServiceService.addAppointments(newP).subscribe(data=>{
 
     }) 
-      console.log(this.PatientDetails),
+      console.log(this.PatientDetails)
       alert("Your appointment is booked")
       ;
   }
@@ -75,4 +91,5 @@ onSubmit()
     return this.book_appointment.get("VisitingStatus") as FormControl;
   }
 
+  
 }

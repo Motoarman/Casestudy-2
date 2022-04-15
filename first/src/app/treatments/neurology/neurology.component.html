@@ -1,31 +1,55 @@
-<section class="Neurology">
-  <div class="col-md-8 col-lg-8 col-sm-8 neurology_page">
-    <h1 class="text-center">
-      <b>Neurology</b>
-    </h1>
-    <div class="main">
-      <p>
-        We bring together experts from neurology, neuropsychology and psychiatry
-        to diagnose and treat complex neurological problems. We have an
-        extensive clinical history in treating the full range of neurological
-        problems including strokes, brain traumas, epilepsy, Parkinson's,
-        multiple sclerosis and neck and spine conditions.
-      </p>
 
-      <h2><b>services provided : </b></h2>
+<div class="col-md-8 col-lg-8 col-sm-8 cardiology_page">
+   
+  <div class ="main">
+      <h1>
+        Neurology
+      </h1>
       <p>
-        <b>DEMENTIA :</b>The evaluation, diagnosis and treatment of individuals
-        suffering from memory disorders such as Alzheimer’s and dementia
+      We bring together experts from neurology, neuropsychology and psychiatry
+      to diagnose and treat complex neurological problems. We have an
+      extensive clinical history in treating the full range of neurological
+      problems including strokes, brain traumas, epilepsy, Parkinson's,
+      multiple sclerosis and neck and spine conditions.
       </p>
-      <p>
-        <b>NEURO-CRITICAL CARE :</b>
-        Emergency care for life threatening neurological emergencies
-      </p>
-      <div class="appointment-link">
-        <a routerLink="/bookAppoitnment"
-          ><button><b>Book Appointment</b></button></a
-        >
-      </div>
-    </div>
+          <h2>services provided :</h2>
+          <p>
+            <b>DEMENTIA :</b>The evaluation, diagnosis and treatment of individuals
+            suffering from memory disorders such as Alzheimer’s and dementia
+          </p>
+          <p>
+            <b>NEURO-CRITICAL CARE :</b>
+            Emergency care for life threatening neurological emergencies
+          </p>
+
+        </div>
+</div>
+
+<div class="doctors">
+  <div style="text-align: center; ">
+    <h3>Cardiologist</h3>
+    <h4>Dr.S.Jadhav(M.S)</h4>
+    <hr>
   </div>
-</section>
+  <div class="container text-center">
+    <div class="row">
+      <div class="col-md-3" >
+        <div class="box">
+          <div class="product_image">
+            <img style="margin-left: 1em;" src="../assets/admin.png" height="170vh" width="200vh" alt="p_01">
+         </div>  
+         <br>
+         <div class="btn btn-primary"
+            (click)="showDiv.enquiry = !showDiv.enquiry;">
+            Book Appointment
+        </div>            
+    </div>              
+  </div>            
+</div>
+</div>
+</div>
+
+
+<div style="display: block;" *ngIf="showDiv.enquiry">
+  <app-book-appointment></app-book-appointment>
+</div>  

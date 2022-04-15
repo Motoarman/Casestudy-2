@@ -87,3 +87,26 @@
     font-size: 55%;
   }
 } */
+
+.banner-txt{
+  color:gray;
+  font: monospace;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  visibility: visible;
+  word-break: keep-all;
+  word-wrap: break-word;
+  outline: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  position: absolute;
+  padding-right: 10%;
+  padding-left: 15px;
+  width: 50%;
+  left: 2%;
+  top:12em;
+  bottom: 0;
+  transform: translateY(-20%);
+}
