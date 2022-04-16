@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./neurology.component.css']
 })
 export class NeurologyComponent implements OnInit {
-
+  CardiologistId =5;
   constructor() { }
 
   ngOnInit(): void {
