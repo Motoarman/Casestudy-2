@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "DW1eDDK87RWK00aTVRKWXm7UufK3fZYZ0SQwPGjfXbojSdcJcCxHJmRmt0i/Comc3Kgv/b4Rt/ApjW1YtFwPzw==",
+  "dgSpecHash": "tpvJcH6hdgt8AiwlS0D4sW/N8Ms3mrAmg9ZvgLzmWxT61pCSVZGv+8jdk7A4w1PreYECDiRqt4Jdb17FGgGtDg==",
   "success": true,
   "projectFilePath": "D:\\Casestudy-2\\server\\server.model\\server.model.csproj",
   "expectedPackageFiles": [
@@ -46,6 +46,7 @@
     "C:\\Users\\anushka15409\\.nuget\\packages\\newtonsoft.json\\11.0.2\\newtonsoft.json.11.0.2.nupkg.sha512",
     "C:\\Users\\anushka15409\\.nuget\\packages\\npgsql\\5.0.1.1\\npgsql.5.0.1.1.nupkg.sha512",
     "C:\\Users\\anushka15409\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\5.0.1\\npgsql.entityframeworkcore.postgresql.5.0.1.nupkg.sha512",
+    "C:\\Users\\anushka15409\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql.design\\1.1.0\\npgsql.entityframeworkcore.postgresql.design.1.1.0.nupkg.sha512",
     "C:\\Users\\anushka15409\\.nuget\\packages\\nuget.frameworks\\4.7.0\\nuget.frameworks.4.7.0.nupkg.sha512",
     "C:\\Users\\anushka15409\\.nuget\\packages\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\anushka15409\\.nuget\\packages\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",

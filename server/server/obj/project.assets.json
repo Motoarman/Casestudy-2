@@ -451,11 +451,11 @@
           "lib/netstandard1.3/Microsoft.EntityFrameworkCore.Relational.Design.dll": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.SqlServer/3.1.23": {
+      "Microsoft.EntityFrameworkCore.SqlServer/3.1.24": {
         "type": "package",
         "dependencies": {
           "Microsoft.Data.SqlClient": "1.1.3",
-          "Microsoft.EntityFrameworkCore.Relational": "3.1.23"
+          "Microsoft.EntityFrameworkCore.Relational": "3.1.24"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.EntityFrameworkCore.SqlServer.dll": {}
@@ -464,10 +464,10 @@
           "lib/netstandard2.0/Microsoft.EntityFrameworkCore.SqlServer.dll": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Tools/3.1.23": {
+      "Microsoft.EntityFrameworkCore.Tools/3.1.24": {
         "type": "package",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore.Design": "3.1.23"
+          "Microsoft.EntityFrameworkCore.Design": "3.1.24"
         },
         "compile": {
           "lib/netstandard2.0/_._": {}
@@ -2698,7 +2698,8 @@
           "Microsoft.EntityFrameworkCore.Relational": "5.0.10",
           "Microsoft.EntityFrameworkCore.Relational.Design": "1.1.6",
           "Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore": "3.1.5",
-          "Npgsql.EntityFrameworkCore.PostgreSQL": "5.0.1"
+          "Npgsql.EntityFrameworkCore.PostgreSQL": "5.0.1",
+          "Npgsql.EntityFrameworkCore.PostgreSQL.Design": "1.1.0"
         },
         "compile": {
           "bin/placeholder/server.model.dll": {}
@@ -3219,31 +3220,31 @@
         "microsoft.entityframeworkcore.relational.design.nuspec"
       ]
     },
-    "Microsoft.EntityFrameworkCore.SqlServer/3.1.23": {
-      "sha512": "jfTL7M74a1TCrg6+BgUnWDz6gd2ouXeAqJO84ILb1AUUQVVDScJFJpAjJcY7AqkAW1VinL4TYfSiNSfX1AhUsg==",
+    "Microsoft.EntityFrameworkCore.SqlServer/3.1.24": {
+      "sha512": "BbirN089SgwAPU8v63TPefDRlVy5bWaeotxj29XEpyhiosmn6GJMF/vP8uUuAF0izhKBw/OnnNO8CR4r/Gbmwg==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore.sqlserver/3.1.23",
+      "path": "microsoft.entityframeworkcore.sqlserver/3.1.24",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "lib/netstandard2.0/Microsoft.EntityFrameworkCore.SqlServer.dll",
         "lib/netstandard2.0/Microsoft.EntityFrameworkCore.SqlServer.xml",
-        "microsoft.entityframeworkcore.sqlserver.3.1.23.nupkg.sha512",
+        "microsoft.entityframeworkcore.sqlserver.3.1.24.nupkg.sha512",
         "microsoft.entityframeworkcore.sqlserver.nuspec"
       ]
     },
-    "Microsoft.EntityFrameworkCore.Tools/3.1.23": {
-      "sha512": "1RRy8gGH4x7gFH6S6WqTXMfN3wyhjUWsfqglzl4wI9of3p9QV55Y2tikoSY7G1NbFWFfvCfiaTFZz2P1BAJcTQ==",
+    "Microsoft.EntityFrameworkCore.Tools/3.1.24": {
+      "sha512": "m1ZRmDAnHtpcsaOoLPPwfDLpWZPPk02OCPQii7+KR2DeS5jw4QuNsguCnk0tAq0gjACTrxP/+BFS57lGAfy/Sw==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore.tools/3.1.23",
+      "path": "microsoft.entityframeworkcore.tools/3.1.24",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "lib/netstandard2.0/_._",
-        "microsoft.entityframeworkcore.tools.3.1.23.nupkg.sha512",
+        "microsoft.entityframeworkcore.tools.3.1.24.nupkg.sha512",
         "microsoft.entityframeworkcore.tools.nuspec",
         "tools/EntityFrameworkCore.PS2.psd1",
         "tools/EntityFrameworkCore.PS2.psm1",
@@ -8802,8 +8803,8 @@
       "Microsoft.EntityFrameworkCore.Proxies >= 5.0.10",
       "Microsoft.EntityFrameworkCore.Relational >= 5.0.10",
       "Microsoft.EntityFrameworkCore.Relational.Design >= 1.1.6",
-      "Microsoft.EntityFrameworkCore.SqlServer >= 3.1.23",
-      "Microsoft.EntityFrameworkCore.Tools >= 3.1.23",
+      "Microsoft.EntityFrameworkCore.SqlServer >= 3.1.24",
+      "Microsoft.EntityFrameworkCore.Tools >= 3.1.24",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 3.1.5",
       "Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore >= 3.1.5",
       "Npgsql.EntityFrameworkCore.PostgreSQL >= 5.0.10",
@@ -8882,13 +8883,13 @@
           },
           "Microsoft.EntityFrameworkCore.SqlServer": {
             "target": "Package",
-            "version": "[3.1.23, )"
+            "version": "[3.1.24, )"
           },
           "Microsoft.EntityFrameworkCore.Tools": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
             "suppressParent": "All",
             "target": "Package",
-            "version": "[3.1.23, )"
+            "version": "[3.1.24, )"
           },
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
             "target": "Package",

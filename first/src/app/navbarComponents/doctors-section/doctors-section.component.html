@@ -1,1 +1,399 @@
-<p>doctors-section works!</p>
+
+<div class="main-div">
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="btn-group">
+                <div class="btn btn-primary"
+                    (click)="showDiv.dr1 = !showDiv.dr1;showDiv.dr2 = false;showDiv.dr3 = false;showDiv.dr4 = false;showDiv.dr5 = false;Onclick1()">
+                   Appointments for jadhav
+                </div>
+                <div class="btn btn-primary"
+                    (click)= "showDiv.dr2 = !showDiv.dr2;showDiv.dr1 = false;showDiv.dr3 = false;showDiv.dr4 = false;showDiv.dr5 = false;Onclick2()" >
+                    Appointments for Dhawan
+                </div>
+                <div class="btn btn-primary"
+                (click)= "showDiv.dr3= !showDiv.dr3;showDiv.dr1 = false;showDiv.dr2 = false;showDiv.dr4 = false;showDiv.dr5 = false;Onclick3()">
+                Appointments for patil
+            </div>
+            <div class="btn btn-primary"
+            (click)= "showDiv.dr4= !showDiv.dr4;showDiv.dr1 = false;showDiv.dr2 = false;showDiv.dr3 = false;showDiv.dr5 = false;Onclick4()">
+            Appointments for Sharma
+        </div>
+        <div class="btn btn-primary"
+        (click)= "showDiv.dr5= !showDiv.dr5;showDiv.dr1 = false;showDiv.dr2 = false;showDiv.dr3 = false;showDiv.dr4 = false;Onclick5()">
+        Appointments for Shinde
+    </div>
+            </div>
+        </div>
+    </div>
+
+    <div  class="row">
+        <div class="table-responsive-sm" *ngIf="showDiv.dr1">
+          <div>
+            <h2> Welcome Dr Jadhav</h2>
+  <table mat-table [dataSource]="GetPatientDetails" class="mat-elevation-z8">
+      <!-- Position Column -->
+      <ng-container  matColumnDef="Firstname">
+        <th class="res" mat-header-cell *matHeaderCellDef>Firstname  </th>
+        <td mat-cell *matCellDef="let element"> {{element.firstName}} </td>
+      </ng-container>
+    
+      <!-- Name Column -->
+      <ng-container matColumnDef="Lastname">
+        <th class="res" mat-header-cell *matHeaderCellDef> Lastname </th>
+        <td mat-cell *matCellDef="let element"> {{element.lastName}} </td>
+      </ng-container>
+    
+      <!-- Weight Column -->
+      <ng-container matColumnDef="EmailId">
+        <th class="res" mat-header-cell *matHeaderCellDef> Email id </th>
+        <td mat-cell *matCellDef="let element"> {{element.emailId}} </td>
+      </ng-container>
+    
+      <!-- Symbol Column -->
+      <ng-container matColumnDef="PhoneNo">
+        <th class="res" style="padding-left: 10px;" mat-header-cell *matHeaderCellDef>Phone No </th>
+        <td  id="comment" mat-cell *matCellDef="let element"> {{element.phoneNo}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="Age">
+        <th class="res" style="padding-left: 10px;" mat-header-cell *matHeaderCellDef> Age </th>
+        <td  id="comment" mat-cell *matCellDef="let element"> {{element.age}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="Gender">
+        <th class="res" style="padding-left: 10px;" mat-header-cell *matHeaderCellDef> Gender </th>
+        <td  id="comment" mat-cell *matCellDef="let element"> {{element.gender}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="MedicalComplaint">
+        <th class="res" style="padding-left: 10px;" mat-header-cell *matHeaderCellDef> Medical Complaint </th>
+        <td  id="comment" mat-cell *matCellDef="let element"> {{element.medicalComplaint}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="SelectedDate">
+        <th class="res" style="padding-left: 10px;" mat-header-cell *matHeaderCellDef> Selected Date </th>
+        <td  id="comment" mat-cell *matCellDef="let element"> {{element.selectedDate | date: 'yy/mm/dd'}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="SelectedSlot">
+        <th class="res" style="padding-left: 10px;" mat-header-cell *matHeaderCellDef> Selected Slot </th>
+        <td  id="comment" mat-cell *matCellDef="let element"> {{element.selectedSlot}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="DoctorId">
+        <th class="res" style="padding-left: 10px;" mat-header-cell *matHeaderCellDef> Doctor Id </th>
+        <td  id="comment" mat-cell *matCellDef="let element"> {{element.doctorId}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="VisitingStatus">
+        <th class="res" style="padding-left: 10px;" mat-header-cell *matHeaderCellDef> Visiting Status </th>
+        <td  id="comment" mat-cell *matCellDef="let element"> {{element.visitingStatus}} </td>
+      </ng-container>
+
+      
+    
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+    
+  </div>
+ </div>
+</div>
+
+<div  class="row">
+  <div class="table-responsive-sm" *ngIf="showDiv.dr2">
+    <div>
+      <h2> Welcome Dr Dhawan</h2>
+<table mat-table [dataSource]="GetPatientDetails" class="mat-elevation-z8">
+<!-- Position Column -->
+<ng-container  matColumnDef="Firstname">
+  <th class="res" mat-header-cell *matHeaderCellDef>Firstname  </th>
+  <td mat-cell *matCellDef="let element"> {{element.firstName}} </td>
+</ng-container>
+
+<!-- Name Column -->
+<ng-container matColumnDef="Lastname">
+  <th class="res" mat-header-cell *matHeaderCellDef> Lastname </th>
+  <td mat-cell *matCellDef="let element"> {{element.lastName}} </td>
+</ng-container>
+
+<!-- Weight Column -->
+<ng-container matColumnDef="EmailId">
+  <th class="res" mat-header-cell *matHeaderCellDef> Email id </th>
+  <td mat-cell *matCellDef="let element"> {{element.emailId}} </td>
+</ng-container>
+
+<!-- Symbol Column -->
+<ng-container matColumnDef="PhoneNo">
+  <th class="res" style="padding-left: 10px;" mat-header-cell *matHeaderCellDef>Phone No </th>
+  <td  id="comment" mat-cell *matCellDef="let element"> {{element.phoneNo}} </td>
+</ng-container>
+
+<ng-container matColumnDef="Age">
+  <th class="res" style="padding-left: 10px;" mat-header-cell *matHeaderCellDef> Age </th>
+  <td  id="comment" mat-cell *matCellDef="let element"> {{element.age}} </td>
+</ng-container>
+
+<ng-container matColumnDef="Gender">
+  <th class="res" style="padding-left: 10px;" mat-header-cell *matHeaderCellDef> Gender </th>
+  <td  id="comment" mat-cell *matCellDef="let element"> {{element.gender}} </td>
+</ng-container>
+
+<ng-container matColumnDef="MedicalComplaint">
+  <th class="res" style="padding-left: 10px;" mat-header-cell *matHeaderCellDef> Medical Complaint </th>
+  <td  id="comment" mat-cell *matCellDef="let element"> {{element.medicalComplaint}} </td>
+</ng-container>
+
+<ng-container matColumnDef="SelectedDate">
+  <th class="res" style="padding-left: 10px;" mat-header-cell *matHeaderCellDef> Selected Date </th>
+  <td  id="comment" mat-cell *matCellDef="let element"> {{element.selectedDate | date: 'yy/mm/dd'}} </td>
+</ng-container>
+
+<ng-container matColumnDef="SelectedSlot">
+  <th class="res" style="padding-left: 10px;" mat-header-cell *matHeaderCellDef> Selected Slot </th>
+  <td  id="comment" mat-cell *matCellDef="let element"> {{element.selectedSlot}} </td>
+</ng-container>
+
+<ng-container matColumnDef="DoctorId">
+  <th class="res" style="padding-left: 10px;" mat-header-cell *matHeaderCellDef> Doctor Id </th>
+  <td  id="comment" mat-cell *matCellDef="let element"> {{element.doctorId}} </td>
+</ng-container>
+
+<ng-container matColumnDef="VisitingStatus">
+  <th class="res" style="padding-left: 10px;" mat-header-cell *matHeaderCellDef> Visiting Status </th>
+  <td  id="comment" mat-cell *matCellDef="let element"> {{element.visitingStatus}} </td>
+</ng-container>
+
+
+
+<tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+<tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>
+
+</div>
+</div>
+</div>
+
+<div  class="row">
+  <div class="table-responsive-sm" *ngIf="showDiv.dr3">
+    <div>
+      <h2> Welcome Dr Patil</h2>
+<table mat-table [dataSource]="GetPatientDetails" class="mat-elevation-z8">
+<!-- Position Column -->
+<ng-container  matColumnDef="Firstname">
+  <th class="res" mat-header-cell *matHeaderCellDef>Firstname  </th>
+  <td mat-cell *matCellDef="let element"> {{element.firstName}} </td>
+</ng-container>
+
+<!-- Name Column -->
+<ng-container matColumnDef="Lastname">
+  <th class="res" mat-header-cell *matHeaderCellDef> Lastname </th>
+  <td mat-cell *matCellDef="let element"> {{element.lastName}} </td>
+</ng-container>
+
+<!-- Weight Column -->
+<ng-container matColumnDef="EmailId">
+  <th class="res" mat-header-cell *matHeaderCellDef> Email id </th>
+  <td mat-cell *matCellDef="let element"> {{element.emailId}} </td>
+</ng-container>
+
+<!-- Symbol Column -->
+<ng-container matColumnDef="PhoneNo">
+  <th class="res" style="padding-left: 10px;" mat-header-cell *matHeaderCellDef>Phone No </th>
+  <td  id="comment" mat-cell *matCellDef="let element"> {{element.phoneNo}} </td>
+</ng-container>
+
+<ng-container matColumnDef="Age">
+  <th class="res" style="padding-left: 10px;" mat-header-cell *matHeaderCellDef> Age </th>
+  <td  id="comment" mat-cell *matCellDef="let element"> {{element.age}} </td>
+</ng-container>
+
+<ng-container matColumnDef="Gender">
+  <th class="res" style="padding-left: 10px;" mat-header-cell *matHeaderCellDef> Gender </th>
+  <td  id="comment" mat-cell *matCellDef="let element"> {{element.gender}} </td>
+</ng-container>
+
+<ng-container matColumnDef="MedicalComplaint">
+  <th class="res" style="padding-left: 10px;" mat-header-cell *matHeaderCellDef> Medical Complaint </th>
+  <td  id="comment" mat-cell *matCellDef="let element"> {{element.medicalComplaint}} </td>
+</ng-container>
+
+<ng-container matColumnDef="SelectedDate">
+  <th class="res" style="padding-left: 10px;" mat-header-cell *matHeaderCellDef> Selected Date </th>
+  <td  id="comment" mat-cell *matCellDef="let element"> {{element.selectedDate | date: 'yy/mm/dd'}} </td>
+</ng-container>
+
+<ng-container matColumnDef="SelectedSlot">
+  <th class="res" style="padding-left: 10px;" mat-header-cell *matHeaderCellDef> Selected Slot </th>
+  <td  id="comment" mat-cell *matCellDef="let element"> {{element.selectedSlot}} </td>
+</ng-container>
+
+<ng-container matColumnDef="DoctorId">
+  <th class="res" style="padding-left: 10px;" mat-header-cell *matHeaderCellDef> Doctor Id </th>
+  <td  id="comment" mat-cell *matCellDef="let element"> {{element.doctorId}} </td>
+</ng-container>
+
+<ng-container matColumnDef="VisitingStatus">
+  <th class="res" style="padding-left: 10px;" mat-header-cell *matHeaderCellDef> Visiting Status </th>
+  <td  id="comment" mat-cell *matCellDef="let element"> {{element.visitingStatus}} </td>
+</ng-container>
+
+
+
+<tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+<tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>
+
+</div>
+</div>
+</div>
+
+<div  class="row">
+  <div class="table-responsive-sm" *ngIf="showDiv.dr4">
+    <div>
+      <h2> Welcome Dr Sharma</h2>
+<table mat-table [dataSource]="GetPatientDetails" class="mat-elevation-z8">
+<!-- Position Column -->
+<ng-container  matColumnDef="Firstname">
+  <th class="res" mat-header-cell *matHeaderCellDef>Firstname  </th>
+  <td mat-cell *matCellDef="let element"> {{element.firstName}} </td>
+</ng-container>
+
+<!-- Name Column -->
+<ng-container matColumnDef="Lastname">
+  <th class="res" mat-header-cell *matHeaderCellDef> Lastname </th>
+  <td mat-cell *matCellDef="let element"> {{element.lastName}} </td>
+</ng-container>
+
+<!-- Weight Column -->
+<ng-container matColumnDef="EmailId">
+  <th class="res" mat-header-cell *matHeaderCellDef> Email id </th>
+  <td mat-cell *matCellDef="let element"> {{element.emailId}} </td>
+</ng-container>
+
+<!-- Symbol Column -->
+<ng-container matColumnDef="PhoneNo">
+  <th class="res" style="padding-left: 10px;" mat-header-cell *matHeaderCellDef>Phone No </th>
+  <td  id="comment" mat-cell *matCellDef="let element"> {{element.phoneNo}} </td>
+</ng-container>
+
+<ng-container matColumnDef="Age">
+  <th class="res" style="padding-left: 10px;" mat-header-cell *matHeaderCellDef> Age </th>
+  <td  id="comment" mat-cell *matCellDef="let element"> {{element.age}} </td>
+</ng-container>
+
+<ng-container matColumnDef="Gender">
+  <th class="res" style="padding-left: 10px;" mat-header-cell *matHeaderCellDef> Gender </th>
+  <td  id="comment" mat-cell *matCellDef="let element"> {{element.gender}} </td>
+</ng-container>
+
+<ng-container matColumnDef="MedicalComplaint">
+  <th class="res" style="padding-left: 10px;" mat-header-cell *matHeaderCellDef> Medical Complaint </th>
+  <td  id="comment" mat-cell *matCellDef="let element"> {{element.medicalComplaint}} </td>
+</ng-container>
+
+<ng-container matColumnDef="SelectedDate">
+  <th class="res" style="padding-left: 10px;" mat-header-cell *matHeaderCellDef> Selected Date </th>
+  <td  id="comment" mat-cell *matCellDef="let element"> {{element.selectedDate | date: 'yy/mm/dd'}} </td>
+</ng-container>
+
+<ng-container matColumnDef="SelectedSlot">
+  <th class="res" style="padding-left: 10px;" mat-header-cell *matHeaderCellDef> Selected Slot </th>
+  <td  id="comment" mat-cell *matCellDef="let element"> {{element.selectedSlot}} </td>
+</ng-container>
+
+<ng-container matColumnDef="DoctorId">
+  <th class="res" style="padding-left: 10px;" mat-header-cell *matHeaderCellDef> Doctor Id </th>
+  <td  id="comment" mat-cell *matCellDef="let element"> {{element.doctorId}} </td>
+</ng-container>
+
+<ng-container matColumnDef="VisitingStatus">
+  <th class="res" style="padding-left: 10px;" mat-header-cell *matHeaderCellDef> Visiting Status </th>
+  <td  id="comment" mat-cell *matCellDef="let element"> {{element.visitingStatus}} </td>
+</ng-container>
+
+
+
+<tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+<tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>
+
+</div>
+</div>
+</div>
+<div  class="row">
+  <div class="table-responsive-sm" *ngIf="showDiv.dr5">
+    <div>
+      <h2> Welcome Dr Shinde</h2>
+<table mat-table [dataSource]="GetPatientDetails" class="mat-elevation-z8">
+<!-- Position Column -->
+<ng-container  matColumnDef="Firstname">
+  <th class="res" mat-header-cell *matHeaderCellDef>Firstname  </th>
+  <td mat-cell *matCellDef="let element"> {{element.firstName}} </td>
+</ng-container>
+
+<!-- Name Column -->
+<ng-container matColumnDef="Lastname">
+  <th class="res" mat-header-cell *matHeaderCellDef> Lastname </th>
+  <td mat-cell *matCellDef="let element"> {{element.lastName}} </td>
+</ng-container>
+
+<!-- Weight Column -->
+<ng-container matColumnDef="EmailId">
+  <th class="res" mat-header-cell *matHeaderCellDef> Email id </th>
+  <td mat-cell *matCellDef="let element"> {{element.emailId}} </td>
+</ng-container>
+
+<!-- Symbol Column -->
+<ng-container matColumnDef="PhoneNo">
+  <th class="res" style="padding-left: 10px;" mat-header-cell *matHeaderCellDef>Phone No </th>
+  <td  id="comment" mat-cell *matCellDef="let element"> {{element.phoneNo}} </td>
+</ng-container>
+
+<ng-container matColumnDef="Age">
+  <th class="res" style="padding-left: 10px;" mat-header-cell *matHeaderCellDef> Age </th>
+  <td  id="comment" mat-cell *matCellDef="let element"> {{element.age}} </td>
+</ng-container>
+
+<ng-container matColumnDef="Gender">
+  <th class="res" style="padding-left: 10px;" mat-header-cell *matHeaderCellDef> Gender </th>
+  <td  id="comment" mat-cell *matCellDef="let element"> {{element.gender}} </td>
+</ng-container>
+
+<ng-container matColumnDef="MedicalComplaint">
+  <th class="res" style="padding-left: 10px;" mat-header-cell *matHeaderCellDef> Medical Complaint </th>
+  <td  id="comment" mat-cell *matCellDef="let element"> {{element.medicalComplaint}} </td>
+</ng-container>
+
+<ng-container matColumnDef="SelectedDate">
+  <th class="res" style="padding-left: 10px;" mat-header-cell *matHeaderCellDef> Selected Date </th>
+  <td  id="comment" mat-cell *matCellDef="let element"> {{element.selectedDate | date: 'yy/mm/dd'}} </td>
+</ng-container>
+
+<ng-container matColumnDef="SelectedSlot">
+  <th class="res" style="padding-left: 10px;" mat-header-cell *matHeaderCellDef> Selected Slot </th>
+  <td  id="comment" mat-cell *matCellDef="let element"> {{element.selectedSlot}} </td>
+</ng-container>
+
+<ng-container matColumnDef="DoctorId">
+  <th class="res" style="padding-left: 10px;" mat-header-cell *matHeaderCellDef> Doctor Id </th>
+  <td  id="comment" mat-cell *matCellDef="let element"> {{element.doctorId}} </td>
+</ng-container>
+
+<ng-container matColumnDef="VisitingStatus">
+  <th class="res" style="padding-left: 10px;" mat-header-cell *matHeaderCellDef> Visiting Status </th>
+  <td  id="comment" mat-cell *matCellDef="let element"> {{element.visitingStatus}} </td>
+</ng-container>
+
+
+
+<tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+<tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>
+
+</div>
+</div>
+</div>
+</div>

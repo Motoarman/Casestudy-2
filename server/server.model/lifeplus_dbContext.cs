@@ -49,12 +49,6 @@ namespace server.model
                 entity.Property(e => e.DoctorId).HasColumnName("doctor_id");
 
                 entity.Property(e => e.PatientId).HasColumnName("patient_id");
-
-                entity.HasOne(d => d.Doctor)
-                    .WithMany(p => p.Appointments)
-                    .HasForeignKey(d => d.DoctorId)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("appointment_doctor_id_fkey");
             });
 
             modelBuilder.Entity<AppointmentStatus>(entity =>
@@ -142,13 +136,9 @@ namespace server.model
                     .HasMaxLength(15)
                     .HasColumnName("phone_no");
 
-                entity.Property(e => e.SpecializationId).HasColumnName("specialization_id");
+                entity.Property(e => e.Photo).HasColumnName("photo");
 
-                entity.HasOne(d => d.Specialization)
-                    .WithMany(p => p.Doctors)
-                    .HasForeignKey(d => d.SpecializationId)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("doctors_specialization_id_fkey");
+                entity.Property(e => e.SpecializationId).HasColumnName("specialization_id");
             });
 
             modelBuilder.Entity<DoctorAvailability>(entity =>
@@ -190,12 +180,6 @@ namespace server.model
                 entity.Property(e => e.UpdatedDate)
                     .HasColumnType("date")
                     .HasColumnName("updated_date");
-
-                entity.HasOne(d => d.Doctor)
-                    .WithMany(p => p.DoctorAvailabilities)
-                    .HasForeignKey(d => d.DoctorId)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("doctor_availability_doctor_id_fkey");
             });
 
             modelBuilder.Entity<DoctorSpecialization>(entity =>

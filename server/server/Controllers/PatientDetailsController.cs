@@ -28,17 +28,20 @@ namespace server.Controllers
         }
 
         // GET: api/PatientDetails/5
-        [HttpGet("{id}")]
-        public async Task<ActionResult<PatientDetail>> GetPatientDetail(int id)
+        [HttpGet("{doctor_id}")]
+        public async Task<ActionResult<IEnumerable<PatientDetail>>>GetPatientDetail(int doctor_id)
         {
-            var patientDetail = await _context.PatientDetails.FindAsync(id);
 
-            if (patientDetail == null)
+            var item = from i in _context.PatientDetails
+                       where i.DoctorId == doctor_id
+                       select i;
+
+            if (item == null)
             {
                 return NotFound();
             }
 
-            return patientDetail;
+            return await item.ToListAsync();
         }
 
         // PUT: api/PatientDetails/5
