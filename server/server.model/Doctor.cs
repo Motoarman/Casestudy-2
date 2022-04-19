@@ -13,6 +13,6 @@ namespace server.model
         public string PhoneNo { get; set; }
         public string EmailId { get; set; }
         public int SpecializationId { get; set; }
-        public byte[] Photo { get; set; }
+        public string Photo { get; set; }
     }
 }

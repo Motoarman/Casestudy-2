@@ -7,6 +7,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 
 
+
 import { AppComponent } from './app.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
@@ -29,9 +30,11 @@ import { DoctorsSectionComponent } from './navbarComponents/doctors-section/doct
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
+
 import {MatTableModule} from '@angular/material/table';
 import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
+
 
 var routelist: Routes = [
 
@@ -50,6 +53,7 @@ var routelist: Routes = [
   {path:'doctors', component:DoctorsSectionComponent},
   {path:'bookAppoitnment',component:BookAppointmentComponent},
   {path:'admin',component:AdminComponent},
+
 
 ];
 
@@ -74,6 +78,7 @@ var routelist: Routes = [
     ContactUsComponent,
     AdminComponent,
     DoctorsSectionComponent,
+
     
   ],
   imports: [BrowserModule, RouterModule.forRoot(routelist),FormsModule,ReactiveFormsModule,HttpClientModule, BrowserAnimationsModule,MatTableModule,MatButtonModule,MatIconModule],

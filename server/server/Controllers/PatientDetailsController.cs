@@ -91,6 +91,7 @@ namespace server.Controllers
         // DELETE: api/PatientDetails/5
         [HttpDelete("{id}")]
         public async Task<ActionResult<PatientDetail>> DeletePatientDetail(int id)
+
         {
             var patientDetail = await _context.PatientDetails.FindAsync(id);
             if (patientDetail == null)

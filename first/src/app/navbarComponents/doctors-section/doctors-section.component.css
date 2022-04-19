@@ -1,6 +1,6 @@
 table {
-    width: 80vw;
     margin: 1em;
+    width: 90%;
   }
  .res{
      padding-right: 25px;
@@ -18,13 +18,18 @@ font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans 
  }
 
  .main-div{
-   min-height:30vw;
+   min-height:50vh;
+   background-image: url("https://img.freepik.com/free-vector/blue-white-wave-background-soft-background_41084-560.jpg?w=740");
+   background-size: 220vh 80vh;
+   background-repeat: no-repeat;
+   background-size: cover;
+   
  }
 
  h2{
    color: #003257;
    font-family: fantasy;
-   margin-left:7vh;
+   margin-left:3vh;
    display:inline-flex;
    margin-top: 0;
  }
@@ -37,3 +42,27 @@ font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans 
  .btn-group{
      margin-top: 2em;
  }
+
+ .button{
+   float: left;
+   
+  
+ }
+.btn{
+   border-bottom: 2px; border-style: solid; border-color: aliceblue;
+   text-align: left;
+   background-color: #003257;
+}
+
+tr{
+  background-color:white;
+  color: white;
+}
+
+th{
+  background-color: #003257;
+  color: white;
+
+}
+
+

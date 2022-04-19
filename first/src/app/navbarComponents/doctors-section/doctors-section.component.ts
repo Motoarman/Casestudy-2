@@ -17,55 +17,30 @@ export class DoctorsSectionComponent implements OnInit {
   ngOnInit(): void {
     
   }
-  Onclick1(){
-    this.DoctorServiceService.getappointmentsForDr1().subscribe(data=>{
-          
+  Onclick1(num:number){
+    this.DoctorServiceService.getappointmentsForDr1(num).subscribe(data=>{
            this.GetPatientDetails=data;
+          
     })
     
   }
 
-  Onclick2(){
-    this.DoctorServiceService.getappointmentsForDr2().subscribe(data=>{
-          
-           this.GetPatientDetails=data;
-    })
+ 
 
-  }
-  
-  Onclick3(){
-    this.DoctorServiceService.getappointmentsForDr3().subscribe(data=>{
-          
-           this.GetPatientDetails=data;
-    })
+  deleteTicket(rowid: number) {
+  // this.GetPatientDetails = this.GetPatientDetails.filter((item, index) => index !== rowid);
     
-  }
+    console.log(rowid);
+     this.DoctorServiceService.deleteHero(rowid).subscribe(data=>{
+      window.location.reload();
+      
 
-  Onclick4(){
-    this.DoctorServiceService.getappointmentsForDr4().subscribe(data=>{
-           this.GetPatientDetails=data;
-    })
-    
-  }
-
-  Onclick5(){
-    this.DoctorServiceService.getappointmentsForDr5().subscribe(data=>{
-
-           this.GetPatientDetails=data;
-    })
-   
+   })
   }
   
 
-  displayedColumns: string[] = [  'Firstname', 'Lastname', 'EmailId', 'PhoneNo','Age','Gender','MedicalComplaint','SelectedDate','SelectedSlot','DoctorId','VisitingStatus'];
-  showDiv = {
-    dr1: false,
-    dr2 : false,
-    dr3 : false,
-    dr4 : false,
-    dr5 : false
-
-  }
+  displayedColumns: string[] = [  'Firstname', 'Lastname', 'EmailId', 'PhoneNo','Age','Gender','MedicalComplaint','SelectedDate','SelectedSlot','DoctorId','VisitingStatus','Action'];
+  
 
   
     }
