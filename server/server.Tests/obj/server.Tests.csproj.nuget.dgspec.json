@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "C:\\Users\\Arman15411\\Desktop\\Casestudy2\\server\\server.Tests\\server.Tests.csproj": {}
   },
   "projects": {
@@ -15,6 +16,22 @@
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Arman15411\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+    "D:\\Casestudy-2\\server\\server.Tests\\server.Tests.csproj": {}
+  },
+  "projects": {
+    "D:\\Casestudy-2\\server\\server.model\\server.model.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Casestudy-2\\server\\server.model\\server.model.csproj",
+        "projectName": "server.model",
+        "projectPath": "D:\\Casestudy-2\\server\\server.model\\server.model.csproj",
+        "packagesPath": "C:\\Users\\anushka15409\\.nuget\\packages\\",
+        "outputPath": "D:\\Casestudy-2\\server\\server.model\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\anushka15409\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> d7b95775d2bd544f77691690624e1336d5830c8d
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -104,6 +121,7 @@
         }
       }
     },
+<<<<<<< HEAD
     "C:\\Users\\Arman15411\\Desktop\\Casestudy2\\server\\server.Tests\\server.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -115,6 +133,19 @@
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Arman15411\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+    "D:\\Casestudy-2\\server\\server.Tests\\server.Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Casestudy-2\\server\\server.Tests\\server.Tests.csproj",
+        "projectName": "server.Tests",
+        "projectPath": "D:\\Casestudy-2\\server\\server.Tests\\server.Tests.csproj",
+        "packagesPath": "C:\\Users\\anushka15409\\.nuget\\packages\\",
+        "outputPath": "D:\\Casestudy-2\\server\\server.Tests\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\anushka15409\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> d7b95775d2bd544f77691690624e1336d5830c8d
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -128,11 +159,19 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
+<<<<<<< HEAD
               "C:\\Users\\Arman15411\\Desktop\\Casestudy2\\server\\server.model\\server.model.csproj": {
                 "projectPath": "C:\\Users\\Arman15411\\Desktop\\Casestudy2\\server\\server.model\\server.model.csproj"
               },
               "C:\\Users\\Arman15411\\Desktop\\Casestudy2\\server\\server\\server.csproj": {
                 "projectPath": "C:\\Users\\Arman15411\\Desktop\\Casestudy2\\server\\server\\server.csproj"
+=======
+              "D:\\Casestudy-2\\server\\server.model\\server.model.csproj": {
+                "projectPath": "D:\\Casestudy-2\\server\\server.model\\server.model.csproj"
+              },
+              "D:\\Casestudy-2\\server\\server\\server.csproj": {
+                "projectPath": "D:\\Casestudy-2\\server\\server\\server.csproj"
+>>>>>>> d7b95775d2bd544f77691690624e1336d5830c8d
               }
             }
           }
@@ -255,6 +294,7 @@
         }
       }
     },
+<<<<<<< HEAD
     "C:\\Users\\Arman15411\\Desktop\\Casestudy2\\server\\server\\server.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -266,6 +306,19 @@
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Arman15411\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+    "D:\\Casestudy-2\\server\\server\\server.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Casestudy-2\\server\\server\\server.csproj",
+        "projectName": "server",
+        "projectPath": "D:\\Casestudy-2\\server\\server\\server.csproj",
+        "packagesPath": "C:\\Users\\anushka15409\\.nuget\\packages\\",
+        "outputPath": "D:\\Casestudy-2\\server\\server\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\anushka15409\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> d7b95775d2bd544f77691690624e1336d5830c8d
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -279,8 +332,13 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
+<<<<<<< HEAD
               "C:\\Users\\Arman15411\\Desktop\\Casestudy2\\server\\server.model\\server.model.csproj": {
                 "projectPath": "C:\\Users\\Arman15411\\Desktop\\Casestudy2\\server\\server.model\\server.model.csproj"
+=======
+              "D:\\Casestudy-2\\server\\server.model\\server.model.csproj": {
+                "projectPath": "D:\\Casestudy-2\\server\\server.model\\server.model.csproj"
+>>>>>>> d7b95775d2bd544f77691690624e1336d5830c8d
               }
             }
           }

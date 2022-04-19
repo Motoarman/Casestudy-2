@@ -15,6 +15,7 @@ namespace server.Tests
     public class ContactUsControllerTests
     {
         [TestMethod]
+<<<<<<< HEAD
 
 
         public void TestPostContactUs()
@@ -47,25 +48,65 @@ namespace server.Tests
 
         [TestMethod]
         public void TestGetContactUs()
+=======
+        public void TestGetContactUs()
         {
             var streamWriter = new StreamWriter("log.txt");
 
             //Arrange
             var context = new lifeplus_dbContext();
-            var contactusABC = context.ContactUs.OrderByDescending(contact => contact.ContactId).FirstOrDefault(contact => contact.Firstname == "abc");
+           var contactusABC = context.ContactUs.Where(contact => contact.Firstname == "arman").FirstOrDefault();
             streamWriter.WriteLine(contactusABC.Firstname);
 
             var controller = new ContactUsController(context);
 
             //Act
             var contactus = controller.GetContactUs().Result.Value;
-            var result = contactus.LastOrDefault();
+            var result = contactus.FirstOrDefault();
 
-            Console.WriteLine(result.Firstname + " " + "taken from ContactU table");
+          Console.WriteLine(result.Firstname + "taken from ContactU table");
 
             //Assert
             Assert.IsNotNull(result, "No ContactUs data returned");
             streamWriter.Close();
         }
+
+        /*public void TestPostContactUs()
+>>>>>>> d7b95775d2bd544f77691690624e1336d5830c8d
+        {
+            var streamWriter = new StreamWriter("log.txt");
+
+            //Arrange
+            var context = new lifeplus_dbContext();
+<<<<<<< HEAD
+            var contactusABC = context.ContactUs.OrderByDescending(contact => contact.ContactId).FirstOrDefault(contact => contact.Firstname == "abc");
+=======
+            var contactusABC = context.ContactUs.Where(contact => contact.Firstname == "abc").LastOrDefault();
+>>>>>>> d7b95775d2bd544f77691690624e1336d5830c8d
+            streamWriter.WriteLine(contactusABC.Firstname);
+
+            var controller = new ContactUsController(context);
+
+            //Act
+<<<<<<< HEAD
+            var contactus = controller.GetContactUs().Result.Value;
+            var result = contactus.LastOrDefault();
+
+            Console.WriteLine(result.Firstname + " " + "taken from ContactU table");
+=======
+            var contactus = controller.PostContactU().Result.Value;
+            var result = contactus.LastOrDefault();
+
+            Console.WriteLine(result.Firstname + "taken from ContactU table");
+>>>>>>> d7b95775d2bd544f77691690624e1336d5830c8d
+
+            //Assert
+            Assert.IsNotNull(result, "No ContactUs data returned");
+            streamWriter.Close();
+<<<<<<< HEAD
+        }
+=======
+        }*/
+>>>>>>> d7b95775d2bd544f77691690624e1336d5830c8d
     }
 }

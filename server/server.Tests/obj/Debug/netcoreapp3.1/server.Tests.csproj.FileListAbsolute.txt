@@ -230,6 +230,7 @@ D:\Casestudy-2\server\server.Tests\bin\Debug\netcoreapp3.1\server.dll
 D:\Casestudy-2\server\server.Tests\bin\Debug\netcoreapp3.1\server.model.dll
 D:\Casestudy-2\server\server.Tests\bin\Debug\netcoreapp3.1\server.model.pdb
 D:\Casestudy-2\server\server.Tests\bin\Debug\netcoreapp3.1\server.pdb
+<<<<<<< HEAD
 C:\Users\Arman15411\Desktop\Casestudy2\server\server.Tests\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\Arman15411\Desktop\Casestudy2\server\server.Tests\bin\Debug\netcoreapp3.1\appsettings.json
 C:\Users\Arman15411\Desktop\Casestudy2\server\server.Tests\bin\Debug\netcoreapp3.1\testhost.exe
@@ -462,3 +463,5 @@ C:\Users\Arman15411\Desktop\Casestudy2\server\server.Tests\obj\Debug\netcoreapp3
 C:\Users\Arman15411\Desktop\Casestudy2\server\server.Tests\obj\Debug\netcoreapp3.1\server.Tests.dll
 C:\Users\Arman15411\Desktop\Casestudy2\server\server.Tests\obj\Debug\netcoreapp3.1\server.Tests.pdb
 C:\Users\Arman15411\Desktop\Casestudy2\server\server.Tests\obj\Debug\netcoreapp3.1\server.Tests.genruntimeconfig.cache
+=======
+>>>>>>> d7b95775d2bd544f77691690624e1336d5830c8d
