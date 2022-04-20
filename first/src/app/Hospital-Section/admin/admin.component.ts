@@ -1,6 +1,6 @@
 import { Component,Inject ,OnInit } from '@angular/core';;
-import { DoctorServiceService } from 'src/app/doctor-service.service';
-import { UserDetails } from 'src/app/user-details';
+import { DoctorServiceService } from 'src/app/Services/doctor-service.service';
+import { UserDetails } from 'src/app/Interfaces/user-details';
 
 
 @Inject(DoctorServiceService)

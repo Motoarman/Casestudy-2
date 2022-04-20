@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component,Inject, OnInit } from '@angular/core';
+import { GetDoctorsService } from 'src/app/Services/get-doctors.service';
+
+
 
 @Component({
   selector: 'app-neurology',
@@ -6,11 +9,26 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./neurology.component.css']
 })
 export class NeurologyComponent implements OnInit {
-  CardiologistId =5;
-  constructor() { }
+  doctors! : any
+  NeurologistId =5;
+  name!:string;
+  constructor(private getDr : GetDoctorsService) { }
 
   ngOnInit(): void {
+
+    this.getDr.getDoctors(this.NeurologistId).subscribe(data=>{
+      this.doctors=data;
+     this.doctors= Array.of(this.doctors); 
+     
+     console.log(this.doctors);
+
+    })
   }
+
+  onBook(){
+  
+  }
+  displayedColumns: string[] = [ 'Firstname'];
   showDiv = {
     enquiry: false,
   }

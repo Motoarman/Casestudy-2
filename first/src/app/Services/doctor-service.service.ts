@@ -1,10 +1,9 @@
 
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { Appointment } from './appointment';
 import { Observable } from 'rxjs';
-import { UserDetails } from './user-details';
-import { GetPatientDetails } from './get-patient-details';
+import { UserDetails } from '../Interfaces/user-details';
+import { GetPatientDetails } from '../Interfaces/get-patient-details';
 import { HttpParamsOptions } from '@angular/common/http';
 
 
@@ -13,7 +12,6 @@ import { HttpParamsOptions } from '@angular/common/http';
   providedIn: 'root'
 })
 export class DoctorServiceService {
-  appointment! :Appointment[];
   userDetails!: UserDetails[];
   GetPatientDetails!:GetPatientDetails[];
   Mainurl: string="https://localhost:44303/api/PatientDetails"; 

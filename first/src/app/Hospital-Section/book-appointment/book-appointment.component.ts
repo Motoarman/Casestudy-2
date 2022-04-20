@@ -1,7 +1,7 @@
 import { Component,Inject ,Input,OnInit } from '@angular/core';
 import { FormControl, FormGroup, NgForm, Validators} from '@angular/forms';
-import { DoctorServiceService } from 'src/app/doctor-service.service';
-import { PatientDetails } from 'src/app/patient-details';
+import { DoctorServiceService } from 'src/app/Services/doctor-service.service';
+import { PatientDetails } from 'src/app/Interfaces/patient-details';
 
 @Inject(DoctorServiceService)
 @Component({
@@ -55,9 +55,11 @@ onSubmit()
     this.DoctorServiceService.addAppointments(newP).subscribe(data=>{
 
     }) 
-      console.log(this.PatientDetails)
+     
       alert("Your appointment is booked")
       ;
+
+      window.location.reload();
   }
 
   get FirstName(): FormControl{

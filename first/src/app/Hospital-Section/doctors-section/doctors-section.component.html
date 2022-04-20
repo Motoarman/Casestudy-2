@@ -73,7 +73,7 @@
 
       <ng-container matColumnDef="SelectedDate">
         <th class="res" style="padding-left: 10px;" mat-header-cell *matHeaderCellDef> Selected Date </th>
-        <td  id="comment" mat-cell *matCellDef="let element"> {{element.selectedDate }} </td>
+        <td  id="comment" mat-cell *matCellDef="let element"> {{element.selectedDate | date:'dd/MM/yyyy'}} </td>
       </ng-container>
 
       <ng-container matColumnDef="SelectedSlot">

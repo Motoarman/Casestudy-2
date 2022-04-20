@@ -24,9 +24,9 @@ import { AccommodationComponent } from './patient-section/accommodation/accommod
 import { CanteenServiceComponent } from './patient-section/canteen-service/canteen-service.component';
 import { AvailableGovSchemesComponent } from './patient-section/available-gov-schemes/available-gov-schemes.component';
 import { HomepageComponent } from './homepage/homepage.component';
-import { BookAppointmentComponent } from './navbarComponents/book-appointment/book-appointment.component';
-import { AdminComponent } from './navbarComponents/admin/admin.component';
-import { DoctorsSectionComponent } from './navbarComponents/doctors-section/doctors-section.component';
+import { BookAppointmentComponent } from './Hospital-Section/book-appointment/book-appointment.component';
+import { AdminComponent } from './Hospital-Section/admin/admin.component';
+import { DoctorsSectionComponent } from './Hospital-Section/doctors-section/doctors-section.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
