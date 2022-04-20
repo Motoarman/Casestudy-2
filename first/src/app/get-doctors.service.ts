@@ -8,10 +8,13 @@ import { Observable } from 'rxjs';
 })
 export class GetDoctorsService {
 Doctors!: Doctors[];
-  constructor(private HttpClient : HttpClient) { }
 
-  getDoctors():Observable<Doctors[]>{
-    return this.HttpClient.get<Doctors[]>("https://localhost:44303/api/Doctors/1",
+  constructor(private HttpClient : HttpClient) { }
+  Mainurl: string="https://localhost:44303/api/Doctors";
+
+  getDoctors(id:number):Observable<Doctors[]>{
+    const url = `${this.Mainurl}/${id}`;
+    return this.HttpClient.get<Doctors[]>(url,
     {
      headers:{
        "Access-Control-Allow-Origin":"*"

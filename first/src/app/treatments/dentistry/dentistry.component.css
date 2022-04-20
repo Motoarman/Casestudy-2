@@ -1,6 +1,6 @@
 .main{
    min-height:60vh;
-   background-color: white;
+   background-color: transparent;
    
 
   
@@ -20,7 +20,7 @@ button{
    border-style: solid; min-height: 57vh ; margin-left: 2em;
 }
 
-.cardiology_page{
+.dentist_page{
    display: inline-block;
 
 }
@@ -50,4 +50,13 @@ b{
 h1,h2,h3 {
    color:#003257;
    font-family: fantasy;
+}
+
+.main-div{
+   background-image: url("https://img.freepik.com/free-vector/blue-white-wave-background-soft-background_41084-560.jpg?w=740");
+   background-size: 220vh 80vh;
+   background-repeat: no-repeat;
+   background-size: cover;
+
+   
 }

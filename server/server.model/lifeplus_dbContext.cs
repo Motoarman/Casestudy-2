@@ -136,7 +136,9 @@ namespace server.model
                     .HasMaxLength(15)
                     .HasColumnName("phone_no");
 
-                entity.Property(e => e.Photo).HasColumnName("photo");
+                entity.Property(e => e.Photo)
+                    .HasMaxLength(100)
+                    .HasColumnName("photo");
 
                 entity.Property(e => e.SpecializationId).HasColumnName("specialization_id");
             });

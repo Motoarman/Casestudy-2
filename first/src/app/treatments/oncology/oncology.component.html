@@ -1,5 +1,5 @@
-
-<div class="col-md-8 col-lg-8 col-sm-8 cardiology_page">
+<div class="main-div">
+<div class="col-md-8 col-lg-8 col-sm-8 oncology_page">
    
   <div class ="main">
       <h1>
@@ -31,30 +31,31 @@
 </div>
 
 <div class="doctors">
-  <div style="text-align: center; ">
-    <h3>Cardiologist</h3>
-    <h4>Dr.S.Jadhav(M.S)</h4>
+  <div style="text-align: center; "*ngFor="let p of doctors">
+    <h3>Oncology</h3>
+    <h4>{{p.firstName +" "+ p.lastName}}</h4>
     <hr>
   </div>
   <div class="container text-center">
-    <div class="row">
+    <div class="row" *ngFor="let p of doctors" >
       <div class="col-md-3" >
         <div class="box">
           <div class="product_image">
-            <img style="margin-left: 1em;" src="../assets/admin.png" height="170vh" width="200vh" alt="p_01">
-         </div>  
+            <img style="margin-left: 1em;" src="{{p.photo}}"height="200vh" width="200vh" alt="p_02">
+         </div>   
          <br>
          <div class="btn btn-primary"
-            (click)="showDiv.enquiry = !showDiv.enquiry;showDiv.current = false;showDiv.next = false;">
+         (click)="showDiv.enquiry = !showDiv.enquiry;">
             Book Appointment
         </div>            
-    </div>              
-  </div>            
-</div>
+      </div>              
+    </div>            
+  </div>
 </div>
 </div>
 
 
 <div style="display: block;" *ngIf="showDiv.enquiry">
-  <app-book-appointment [doctorId]="CardiologistId"></app-book-appointment>
+  <app-book-appointment [doctorId]="OncologyId"></app-book-appointment>
 </div>  
+</div>

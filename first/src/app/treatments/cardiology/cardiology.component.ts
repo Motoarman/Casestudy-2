@@ -1,6 +1,7 @@
 import { Component,Inject, OnInit } from '@angular/core';
 import { GetDoctorsService } from 'src/app/get-doctors.service';
-import { Doctors } from 'src/app/doctors';
+
+
 
 @Inject(GetDoctorsService)
 @Component({
@@ -9,14 +10,17 @@ import { Doctors } from 'src/app/doctors';
   styleUrls: ['./cardiology.component.css']
 })
 export class CardiologyComponent implements OnInit {
-  doctors!:Doctors[];
+  doctors! : any
   CardiologistId =1;
   name!:string;
   constructor(private getDr : GetDoctorsService) { }
 
   ngOnInit(): void {
-    this.getDr.getDoctors().subscribe(data=>{
-     this.doctors=data;
+
+    this.getDr.getDoctors(this.CardiologistId).subscribe(data=>{
+      this.doctors=data;
+     this.doctors= Array.of(this.doctors); 
+     
      console.log(this.doctors);
      
     })

@@ -5,6 +5,7 @@ import { Appointment } from './appointment';
 import { Observable } from 'rxjs';
 import { UserDetails } from './user-details';
 import { GetPatientDetails } from './get-patient-details';
+import { HttpParamsOptions } from '@angular/common/http';
 
 
 
@@ -15,11 +16,13 @@ export class DoctorServiceService {
   appointment! :Appointment[];
   userDetails!: UserDetails[];
   GetPatientDetails!:GetPatientDetails[];
+  Mainurl: string="https://localhost:44303/api/PatientDetails"; 
+
   
   constructor(private httpClient: HttpClient) { }
 
   
- 
+ //post
 addAppointments(patient:any) {
     console.log(patient)
     return this.httpClient.post("https://localhost:44303/api/PatientDetails",patient,{
@@ -30,9 +33,10 @@ addAppointments(patient:any) {
   }
 
 
-
-getappointmentsForDr1():Observable<GetPatientDetails[]>{
-  return this.httpClient.get<GetPatientDetails[]>("https://localhost:44303/api/PatientDetails/1",
+//get
+getappointmentsForDr1(id :number):Observable<GetPatientDetails[]>{
+  const url = `${this.Mainurl}/${id}`; // 
+  return this.httpClient.get<GetPatientDetails[]>(url,
   {
 
    headers:{
@@ -42,49 +46,16 @@ getappointmentsForDr1():Observable<GetPatientDetails[]>{
   });
 }
 
-getappointmentsForDr2():Observable<GetPatientDetails[]>{
-  return this.httpClient.get<GetPatientDetails[]>("https://localhost:44303/api/PatientDetails/2",
-  {
 
-   headers:{
-     "Access-Control-Allow-Origin":"*"
-   }
 
-  });
+//delete
+deleteHero(id: number): Observable<unknown> {
+  console.log(id);
+  const url = `${this.Mainurl}/${id}`; // DELETE api/heroes/42
+  return this.httpClient.delete(url);
+    
 }
 
-getappointmentsForDr3():Observable<GetPatientDetails[]>{
-  return this.httpClient.get<GetPatientDetails[]>("https://localhost:44303/api/PatientDetails/3",
-  {
-
-   headers:{
-     "Access-Control-Allow-Origin":"*"
-   }
-
-  });
-}
-
-getappointmentsForDr4():Observable<GetPatientDetails[]>{
-  return this.httpClient.get<GetPatientDetails[]>("https://localhost:44303/api/PatientDetails/4",
-  {
-
-   headers:{
-     "Access-Control-Allow-Origin":"*"
-   }
-
-  });
-}
-
-getappointmentsForDr5():Observable<GetPatientDetails[]>{
-  return this.httpClient.get<GetPatientDetails[]>("https://localhost:44303/api/PatientDetails/5",
-  {
-
-   headers:{
-     "Access-Control-Allow-Origin":"*"
-   }
-
-  });
-}
 
 
 
@@ -108,3 +79,7 @@ getEnquiry():Observable<UserDetails[]>{
   });
 }
 }
+function httpOptions(url: string, httpOptions: any) {
+  throw new Error('Function not implemented.');
+}
+

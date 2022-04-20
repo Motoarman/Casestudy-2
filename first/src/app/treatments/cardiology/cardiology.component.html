@@ -1,3 +1,5 @@
+<div class="main-div">
+
 
 <div class="col-md-8 col-lg-8 col-sm-8 cardiology_page">
    
@@ -29,17 +31,17 @@
  </div>
 
  <div class="doctors" >
-        <div style="text-align: center; ">
+        <div style="text-align: center; "*ngFor="let p of doctors">
           <h3>Cardiologist</h3>
-          <h4>Dr.S.Jadhav(M.S)</h4>
+          <h4>{{p.firstName +" "+ p.lastName}}</h4>
           <hr>
         </div>
         <div class="container text-center">
-          <div class="row">
+          <div class="row" *ngFor="let p of doctors" >
             <div class="col-md-3"  >
               <div class="box">
                 <div class="product_image">
-                  <img style="margin-left: 1em;" src="../assets/admin.png" height="200vh" width="200vh" alt="p_01">
+                  <img style="margin-left: 1em;" src="{{p.photo}}"height="200vh" width="200vh" alt="p_01">
                </div>  
                <br>
                <div class="btn btn-primary"
@@ -55,3 +57,6 @@
     <div style="display: block;" *ngIf="showDiv.enquiry">
         <app-book-appointment [doctorId]="CardiologistId" ></app-book-appointment>
     </div>  
+</div>
+</div>
+    

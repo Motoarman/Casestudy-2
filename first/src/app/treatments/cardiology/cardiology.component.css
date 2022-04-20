@@ -1,6 +1,8 @@
 .main{
    min-height:60vh;
-   background-color: white;
+   background-color: transparent;
+
+  
    
 
   
@@ -22,6 +24,7 @@ button{
 
 .cardiology_page{
    display: inline-block;
+   
 
 }
 
@@ -47,9 +50,19 @@ b{
 
 .btn{
    margin: 0px 2em 1em 2em ;
+   
 }
 
 h1,h2,h3{
    color:#003257;
    font-family: fantasy;
+}
+
+.main-div{
+   background-image: url("https://img.freepik.com/free-vector/blue-white-wave-background-soft-background_41084-560.jpg?w=740");
+   background-size: 220vh 80vh;
+   background-repeat: no-repeat;
+   background-size: cover;
+
+   
 }

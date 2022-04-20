@@ -20,7 +20,16 @@ font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans 
 
  #main-div{
    min-height:30vw;
+   background-image:url("https://img.freepik.com/free-vector/blue-white-wave-background-soft-background_41084-560.jpg?w=740") ;
+   background-size: 220vh 80vh;
+   background-repeat: no-repeat;
+   background-size: cover;
+   
  }
+
+  
+   
+ 
 
  h2{
    color: #003257;
@@ -33,4 +42,10 @@ font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans 
  .mat-icon {
  font-size:60px;
  color: #003257;
+ }
+
+ 
+ th{
+  background-color: #003257;
+  color: white;
  }
