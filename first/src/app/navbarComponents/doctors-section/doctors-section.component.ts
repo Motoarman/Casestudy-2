@@ -29,12 +29,9 @@ export class DoctorsSectionComponent implements OnInit {
 
   deleteTicket(rowid: number) {
   // this.GetPatientDetails = this.GetPatientDetails.filter((item, index) => index !== rowid);
-    
-    console.log(rowid);
+     console.log(rowid);
      this.DoctorServiceService.deleteHero(rowid).subscribe(data=>{
       window.location.reload();
-      
-
    })
   }
   

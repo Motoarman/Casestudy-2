@@ -17,6 +17,7 @@ export class DoctorServiceService {
   userDetails!: UserDetails[];
   GetPatientDetails!:GetPatientDetails[];
   Mainurl: string="https://localhost:44303/api/PatientDetails"; 
+  Conurl:string="https://localhost:44303/api/contactUs";
 
   
   constructor(private httpClient: HttpClient) { }
@@ -51,13 +52,18 @@ getappointmentsForDr1(id :number):Observable<GetPatientDetails[]>{
 //delete
 deleteHero(id: number): Observable<unknown> {
   console.log(id);
-  const url = `${this.Mainurl}/${id}`; // DELETE api/heroes/42
+  const url = `${this.Mainurl}/${id}`; 
   return this.httpClient.delete(url);
     
 }
 
 
-
+deleteEnquiry(id: number): Observable<unknown> {
+  console.log(id);
+  const url = `${this.Conurl}/${id}`;
+  return this.httpClient.delete(url);
+    
+}
 
 addEnquiry(hero:any) {
   console.log(hero)

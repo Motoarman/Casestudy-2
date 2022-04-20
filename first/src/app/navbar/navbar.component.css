@@ -36,6 +36,7 @@
 
  .navbar ul li a:hover{
     color:darkgoldenrod;
+    background-color: white;
 }
 
 .nav-item{

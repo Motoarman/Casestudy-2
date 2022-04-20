@@ -28,9 +28,9 @@
     </div>
 
     <div class="row "  >
-        <div class="table-responsive-sm" >
+        <div class="table-responsive-xl" >
           <div>
-            <h2> Welcome Dr Jadhav</h2>
+            <h2> Welcome Doctor</h2>
   <table mat-table [dataSource]="GetPatientDetails" class="mat-elevation-z8">
       <!-- Position Column -->
       <ng-container  matColumnDef="Firstname">
@@ -93,8 +93,8 @@
 
       <ng-container matColumnDef="Action">
         <th mat-header-cell *matHeaderCellDef> Action </th>   
-        <td mat-cell *matCellDef="let i"> 
-          <button routerLink="/dialogue" mat-raised-button color="warn" >delete</button> 
+        <td mat-cell *matCellDef="let element"> 
+          <button (click)="deleteTicket(element.id)" mat-raised-button color="warn">delete</button> 
         </td>
       </ng-container>
      
