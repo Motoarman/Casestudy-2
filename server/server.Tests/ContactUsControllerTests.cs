@@ -103,16 +103,8 @@ namespace server.Tests
             {
                 Console.WriteLine(e.Message);
             }
-<<<<<<< HEAD
-            //Assert1
-            finally
-            {
-                Assert.IsNotNull(new_result, "Enquiry not found for given id ");
-            }
-=======
             //Asser1
             Assert.IsNotNull(new_result, "value not deleted");
->>>>>>> 0ca984980230c68d25c6ce041dcd0593d2deb790
 
         }
     }

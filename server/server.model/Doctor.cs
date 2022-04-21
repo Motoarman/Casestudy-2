@@ -12,7 +12,7 @@ namespace server.model
         public string LastName { get; set; }
         public string PhoneNo { get; set; }
         public string EmailId { get; set; }
-        public string SpecializationId { get; set; }
+        public int SpecializationId { get; set; }
         public string Photo { get; set; }
     }
 }

@@ -18,10 +18,7 @@ export class OncologyComponent implements OnInit {
 
     this.getDr.getDoctors(this.OncologyId).subscribe(data=>{
       this.doctors=data;
-     this.doctors= Array.of(this.doctors); 
-     
-     console.log(this.doctors);
-     
+
   })
 }
 onBook(){

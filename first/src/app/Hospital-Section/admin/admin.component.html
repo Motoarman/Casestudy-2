@@ -7,50 +7,45 @@
 <div class="container">
   <div class="row">
       <div class="col-md-4">
-          <div class="btn-group">
               <div class="btn btn-dark"
-                  (click)="showDiv.enquiry = !showDiv.enquiry;showDiv.current = false;showDiv.next = false; onEnquiry()">
+                  (click)="showDiv.enquiry = !showDiv.enquiry;showDiv.current = false; onEnquiry()">
                   Enquiries
-              </div>
-              <div class="btn btn-secondary"
-                  (click)= " showDiv.current = !showDiv.current;showDiv.enquiry = false;showDiv.next = false ">
-                  doctors
               </div>
           </div>
       </div>
-  </div>
+
 
 
   <div  class="row">
       <div class="table-responsive-sm" *ngIf="showDiv.enquiry">
         <div  >
 <table mat-table [dataSource]="userdetails" class="mat-elevation-z8">
-    <!-- Position Column -->
+
     <ng-container  matColumnDef="Firstname">
       <th class="res" mat-header-cell *matHeaderCellDef>Firstname  </th>
       <td mat-cell *matCellDef="let element"> {{element.firstname}} </td>
     </ng-container>
   
-    <!-- Name Column -->
+  
     <ng-container matColumnDef="Lastname">
       <th class="res" mat-header-cell *matHeaderCellDef> Lastname </th>
       <td mat-cell *matCellDef="let element"> {{element.lastname}} </td>
     </ng-container>
   
-    <!-- Weight Column -->
+   
     <ng-container matColumnDef="EmailId">
       <th class="res" mat-header-cell *matHeaderCellDef> Email id </th>
       <td mat-cell *matCellDef="let element"> {{element.emailId}} </td>
     </ng-container>
   
-    <!-- Symbol Column -->
+  
     <ng-container matColumnDef="PComment">
       <th class="res" style="padding-left: 10px;" mat-header-cell *matHeaderCellDef> Comment </th>
       <td  id="comment" mat-cell *matCellDef="let element"> {{element.pComment}} </td>
     </ng-container>
 
-    <ng-container matColumnDef="Action">
-      <th mat-header-cell *matHeaderCellDef> Action </th>   
+    <ng-container  matColumnDef="Action">
+      <th style="font-size: 12pt ;"  mat-header-cell *matHeaderCellDef> Action </th>   
       <td mat-cell *matCellDef="let element; let j = index;"> 
         <button (click)="deleteEnquiry(element.contactId,j)" mat-raised-button color="warn">delete</button> 
       </td>
@@ -62,10 +57,8 @@
   </table>
   
 </div>
-      </div>
-  </div>
 </div>
-
+</div>
 </div>
 
 

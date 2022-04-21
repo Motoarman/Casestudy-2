@@ -19,8 +19,6 @@ export class CardiologyComponent implements OnInit {
 
     this.getDr.getDoctors(this.CardiologistId).subscribe(data=>{
       this.doctors=data;
-     this.doctors= Array.of(this.doctors); 
-     
      console.log(this.doctors);
      
     })

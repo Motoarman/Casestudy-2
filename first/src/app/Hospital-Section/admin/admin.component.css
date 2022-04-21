@@ -1,7 +1,8 @@
 
   table {
-    width: 85vw ;
+    width: 70vw;
     margin: 1em;
+   
   }
  .res{
      padding-right: 25px;
@@ -28,8 +29,6 @@ font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans 
  }
 
   
-   
- 
 
  h2{
    color: #003257;
@@ -49,3 +48,5 @@ font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans 
   background-color: #003257;
   color: white;
  }
+
+ 

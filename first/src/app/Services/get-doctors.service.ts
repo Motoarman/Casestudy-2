@@ -23,7 +23,7 @@ Doctors!: Doctors[];
     });
   }
   addDoctors(doctor : any){
-    console.log(doctor.value);
+    console.log(doctor);
     return this.HttpClient.post(this.Mainurl,doctor,{
       headers:{
         "Access-Control-Allow-Origin":"*"

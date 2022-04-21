@@ -16,10 +16,13 @@ button{
 }
 
 .doctors{
-  display: inline-block;
+   display: inline-block;
    background-color: white;
    margin-bottom:1em;
-   border-style: solid; min-height: 57vh ; margin-left: 2em;
+   border-style: solid; 
+   min-height: 57vh ; 
+   margin-left: 2em;
+   min-width:19.5vw ;
 }
 
 .cardiology_page{

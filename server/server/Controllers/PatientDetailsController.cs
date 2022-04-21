@@ -44,39 +44,41 @@ namespace server.Controllers
             return await item.ToListAsync();
         }
 
-        //// PUT: api/PatientDetails/5
-        //// To protect from overposting attacks, enable the specific properties you want to bind to, for
-        //// more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
-        //[HttpPut("{id}")]
-        //public async Task<IActionResult> PutPatientDetail(int id, PatientDetail patientDetail)
-        //{
-        //    if (id != patientDetail.Id)
-        //    {
-        //        return BadRequest();
-        //    }
+        // PUT: api/PatientDetails/5
+        // To protect from overposting attacks, enable the specific properties you want to bind to, for
+        // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
+        [HttpPut("{id}")]
+        public async Task<IActionResult> PutPatientDetail(int id, PatientDetail patientDetail)
+        {
+            if (id != patientDetail.Id)
+            {
+                return BadRequest();
+            }
 
-        //    _context.Entry(patientDetail).State = EntityState.Modified;
+            _context.Entry(patientDetail).State = EntityState.Modified;
 
-        //    try
-        //    {
-        //        await _context.SaveChangesAsync();
-        //    }
-        //    catch (DbUpdateConcurrencyException)
-        //    {
-        //        if (!PatientDetailExists(id))
-        //        {
-        //            return NotFound();
-        //        }
-        //        else
-        //        {
-        //            throw;
-        //        }
-        //    }
+            try
+            {
+                await _context.SaveChangesAsync();
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!PatientDetailExists(id))
+                {
+                    return NotFound();
+                }
+                else
+                {
+                    throw;
+                }
+            }
 
-        //    return NoContent();
-        //}
+            return NoContent();
+        }
 
         // POST: api/PatientDetails
+        // To protect from overposting attacks, enable the specific properties you want to bind to, for
+        // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPost]
         public async Task<ActionResult<PatientDetail>> PostPatientDetail(PatientDetail patientDetail)
         {

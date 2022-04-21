@@ -45,7 +45,7 @@ displayedColumns: string[] = [  'Firstname', 'Lastname', 'EmailId', 'PComment','
 showDiv = {
   enquiry: false,
   current : false,
-  next : false
+  
 }
 
 }

@@ -30,17 +30,17 @@ namespace server.Controllers
 
         // GET: api/Doctors/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<Doctor>> GetDoctor(int id)
+        public async Task<ActionResult<IEnumerable<Doctor>>> GetDoctor(int id)
         {
-            var doctor = await _context.Doctors.FindAsync(id);
-            if (doctor == null)
-            {
-                return NotFound();
-            }
-            //var item = from i in _context.Doctors
-            //           where i.SpecializationId == id;
+            
+     
 
-            return doctor;
+            var item = from i in _context.Doctors
+                       where i.SpecializationId == id
+                       select i;
+
+
+            return await item.ToListAsync();
 
 
         }

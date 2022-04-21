@@ -1,0 +1,41 @@
+CREATE TABLE Doctor_specialization(
+Id INT NOT NULL PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
+Specialization_in VARCHAR(30)
+);
+
+
+
+
+CREATE TABLE Doctors(
+Id INT PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
+First_name VARCHAR(20),
+Last_name VARCHAR(20),
+Phone_no VARCHAR(15),
+Email_id VARCHAR(30),
+Specialization_id INT NOT NULL REFERENCES Doctor_specialization(Id)	
+);
+
+
+CREATE TABLE Patient_details(
+Id INT PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
+First_name VARCHAR(20),
+Last_name VARCHAR(20),
+Phone_no VARCHAR(15),
+Email_id VARCHAR(30),
+Age INT,
+Gender VARCHAR(10),
+Medical_complaint VARCHAR(70),
+Selected_date DATE,
+Selected_slot VARCHAR(15),
+Visiting_status VARCHAR(15)
+);
+
+CREATE TABLE IF NOT EXISTS public.contact_us
+(
+    contact_id integer NOT NULL GENERATED ALWAYS AS IDENTITY ( INCREMENT 1 START 1 MINVALUE 1 MAXVALUE 2147483647 CACHE 1 ),
+    firstname character varying(15) COLLATE pg_catalog."default" NOT NULL,
+    lastname character varying(15) COLLATE pg_catalog."default" NOT NULL,
+    email_id character varying(50) COLLATE pg_catalog."default" NOT NULL,
+    p_comment character varying(50) COLLATE pg_catalog."default" NOT NULL,
+    CONSTRAINT contact_us_pkey PRIMARY KEY (contact_id)
+)

@@ -51,15 +51,11 @@ onSubmit()
       VisitingStatus: this.book_appointment.value.VisitingStatus
     };
     
-    
     this.DoctorServiceService.addAppointments(newP).subscribe(data=>{
-
     }) 
-     
       alert("Your appointment is booked")
       ;
-
-    //  window.location.reload();
+     window.location.reload();
   }
 
   get FirstName(): FormControl{
