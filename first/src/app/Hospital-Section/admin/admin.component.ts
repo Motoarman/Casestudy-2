@@ -60,17 +60,17 @@ Doctors = new FormGroup({
   Photo: new FormControl('',[Validators.required])
   
 })
-onSubmit(Doctors: any)
-{
+// onSubmit(Doctors: any)
+// {
   
-  Doctors= this.DoctorDetails;
-  console.log(Doctors);
-    this.GetDoctorService.addDoctors(Doctors).subscribe(data =>{
+//   Doctors= this.DoctorDetails;
+//   console.log(Doctors);
+//     this.GetDoctorService.addDoctors(Doctors).subscribe(data =>{
 
-    });
-    alert("Doctors is assigned")
-    ;
-}
+//     });
+//     alert("Doctors is assigned")
+//     ;
+// }
 
 get FirstName(): FormControl{
   return this.Doctors.get("FirstName") as FormControl;

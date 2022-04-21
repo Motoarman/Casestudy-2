@@ -148,6 +148,7 @@ C:\Users\Arman15411\Desktop\Casestudy2\server\server\obj\Debug\netcoreapp3.1\ser
 C:\Users\Arman15411\Desktop\Casestudy2\server\server\obj\Debug\netcoreapp3.1\server.dll
 C:\Users\Arman15411\Desktop\Casestudy2\server\server\obj\Debug\netcoreapp3.1\server.pdb
 C:\Users\Arman15411\Desktop\Casestudy2\server\server\obj\Debug\netcoreapp3.1\server.genruntimeconfig.cache
+<<<<<<< HEAD
 D:\Casestudy-2\server\server\bin\Debug\netcoreapp3.1\appsettings.Development.json
 D:\Casestudy-2\server\server\bin\Debug\netcoreapp3.1\appsettings.json
 D:\Casestudy-2\server\server\bin\Debug\netcoreapp3.1\server.exe
@@ -298,3 +299,5 @@ D:\Casestudy-2\server\server\obj\Debug\netcoreapp3.1\server.csproj.CopyComplete
 D:\Casestudy-2\server\server\obj\Debug\netcoreapp3.1\server.dll
 D:\Casestudy-2\server\server\obj\Debug\netcoreapp3.1\server.pdb
 D:\Casestudy-2\server\server\obj\Debug\netcoreapp3.1\server.genruntimeconfig.cache
+=======
+>>>>>>> 0ca984980230c68d25c6ce041dcd0593d2deb790
