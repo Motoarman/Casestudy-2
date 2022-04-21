@@ -22,4 +22,12 @@ Doctors!: Doctors[];
   
     });
   }
+  addDoctors(doctor : any){
+    console.log(doctor.value);
+    return this.HttpClient.post(this.Mainurl,doctor,{
+      headers:{
+        "Access-Control-Allow-Origin":"*"
+      }
+    });
+  }
 }

@@ -93,7 +93,7 @@ namespace server.model
 
                 entity.Property(e => e.EmailId)
                     .IsRequired()
-                    .HasMaxLength(50)
+                    .HasMaxLength(20)
                     .HasColumnName("email_id");
 
                 entity.Property(e => e.Firstname)
@@ -140,7 +140,10 @@ namespace server.model
                     .HasMaxLength(100)
                     .HasColumnName("photo");
 
-                entity.Property(e => e.SpecializationId).HasColumnName("specialization_id");
+                entity.Property(e => e.SpecializationId)
+                    .IsRequired()
+                    .HasMaxLength(1)
+                    .HasColumnName("specialization_id");
             });
 
             modelBuilder.Entity<DoctorAvailability>(entity =>
