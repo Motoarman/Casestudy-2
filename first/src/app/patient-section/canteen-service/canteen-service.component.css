@@ -1,6 +1,17 @@
 .canteen-image-div{
    display: inline-block;
+  
 }
 .canteen-image-sidetext{
    display: inline-block;
+}
+
+.canteen-main{
+   padding: 1%;
+    width:100%;
+    background-image: url("https://img.freepik.com/free-vector/blue-white-wave-background-soft-background_41084-560.jpg?w=740");
+   background-size: 220vh 80vh;
+   background-repeat: no-repeat;
+   background-size: cover;
+
 }

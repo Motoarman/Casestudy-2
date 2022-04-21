@@ -3,6 +3,10 @@
   margin-left: 1%;
 }
 
+.footer-content{
+  min-height: 5vw;
+}
+
 .footer-services{
   display: inline-block;
   margin-left: 3vw;
