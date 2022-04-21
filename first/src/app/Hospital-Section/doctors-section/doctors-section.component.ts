@@ -27,11 +27,11 @@ export class DoctorsSectionComponent implements OnInit {
 
  
 
-  deleteTicket(rowid: number) {
-  // this.GetPatientDetails = this.GetPatientDetails.filter((item, index) => index !== rowid);
+  deleteTicket(rowid: number,eindex:number) {
+    this.GetPatientDetails = this.GetPatientDetails.filter((item, index) => index !== eindex);
      console.log(rowid);
      this.DoctorServiceService.deleteHero(rowid).subscribe(data=>{
-      window.location.reload();
+    //  window.location.reload();
    })
   }
   

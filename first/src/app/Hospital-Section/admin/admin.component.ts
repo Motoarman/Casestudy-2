@@ -29,11 +29,14 @@ export class AdminComponent implements OnInit {
 
 }
 
-deleteEnquiry(rowid: number) {
-  // this.GetPatientDetails = this.GetPatientDetails.filter((item, index) => index !== rowid);
-     console.log(rowid);
-     this.DoctorServiceService.deleteEnquiry(rowid).subscribe(data=>{
-      window.location.reload();
+deleteEnquiry(rowid: number,eindex:number) {
+  
+     console.log(rowid,eindex);
+   
+       this.userdetails = this.userdetails.filter((item, index) => index !== eindex);
+      this.DoctorServiceService.deleteEnquiry(rowid).subscribe(data=>{
+
+      //window.location.reload();
    })
   }
 

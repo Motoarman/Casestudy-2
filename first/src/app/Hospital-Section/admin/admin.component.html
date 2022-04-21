@@ -51,8 +51,8 @@
 
     <ng-container matColumnDef="Action">
       <th mat-header-cell *matHeaderCellDef> Action </th>   
-      <td mat-cell *matCellDef="let element"> 
-        <button (click)="deleteEnquiry(element.contactId)" mat-raised-button color="warn">delete</button> 
+      <td mat-cell *matCellDef="let element; let j = index;"> 
+        <button (click)="deleteEnquiry(element.contactId,j)" mat-raised-button color="warn">delete</button> 
       </td>
     </ng-container>
 
