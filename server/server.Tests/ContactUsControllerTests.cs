@@ -67,5 +67,48 @@ namespace server.Tests
             Assert.IsNotNull(result, "No ContactUs data returned");
             streamWriter.Close();
         }
+
+        [TestMethod]
+        public void TestDeleteContactUs()
+        {
+
+            //arrange
+            var context = new lifeplus_dbContext();
+            var controller = new ContactUsController(context);
+            var id = 12;
+            string new_result=null;
+
+
+            //act DeleteContactU(int id)
+            var contactU =  context.ContactUs.Find(id);
+            //if (contactU == null)
+            //{
+            //    return NotFound();
+            //}
+            try
+            {
+                context.ContactUs.Remove(contactU);
+                context.SaveChanges();
+
+                var result = context.ContactUs.Find(id);
+                if (result == null)
+                {
+                    new_result = " deleted";
+                    Console.WriteLine("entry for" + " " + id + " " + new_result);
+
+                }
+            }
+
+            catch (ArgumentNullException e)
+            {
+                Console.WriteLine(e.Message);
+            }
+            //Assert1
+            finally
+            {
+                Assert.IsNotNull(new_result, "Enquiry not found for given id ");
+            }
+
+        }
     }
 }

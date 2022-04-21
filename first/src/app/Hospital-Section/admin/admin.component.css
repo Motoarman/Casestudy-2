@@ -1,0 +1,75 @@
+
+  table {
+    width: 80vw;
+    margin: 1em;
+  }
+ .res{
+     padding-right: 25px;
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     font-size: 11pt;
+    
+ }
+ 
+ #comment{
+     padding-left: 10px;
+ }
+
+ .mat-cell{
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ }
+
+ #main-div{
+   min-height:30vw;
+   background-image:url("https://img.freepik.com/free-vector/blue-white-wave-background-soft-background_41084-560.jpg?w=740") ;
+   background-size: 220vh 80vh;
+   background-repeat: no-repeat;
+   background-size: cover;
+   
+ }
+
+  
+   
+ 
+
+ h2{
+   color: #003257;
+   font-family: fantasy;
+   margin-left:7vh;
+   display:inline-flex;
+   margin-top: 0;
+ }
+
+ .mat-icon {
+ font-size:60px;
+ color: #003257;
+ }
+
+ 
+ th{
+  background-color: #003257;
+  color: white;
+ }
+
+ .Doctors
+{
+
+    padding: 1%;
+    width:100%
+}
+.login
+{
+
+    background-color: white;
+    padding: 0% 2% 1% 2%;
+    margin: 1% 30% 5% 30%;
+    border-style: solid;
+}
+
+@media screen and (max-width:600px) {
+    .book-appointment
+{
+    background-color:aliceblue;
+    padding: 3% 4% 3% 4%;
+    
+}
+}

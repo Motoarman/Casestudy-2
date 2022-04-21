@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { FormControl, FormGroup, NgForm, Validators} from '@angular/forms';
-import { DoctorServiceService } from 'src/app/doctor-service.service';
-import { UserDetails } from '../user-details';
+import { DoctorServiceService } from 'src/app/Services/doctor-service.service';
+import { UserDetails } from '../Interfaces/user-details';
 
 @Component({
   selector: 'app-contact-us',

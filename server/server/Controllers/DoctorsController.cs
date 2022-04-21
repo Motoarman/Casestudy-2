@@ -37,6 +37,8 @@ namespace server.Controllers
             {
                 return NotFound();
             }
+            //var item = from i in _context.Doctors
+            //           where i.SpecializationId == id;
 
             return doctor;
 
